@@ -1,0 +1,18 @@
+function dsfocus(){f();}
+function placeHolderFieldAnimation(){var appleId=document.getElementById('appleId');document.getElementById('accountName').setAttribute('placeholder',appleId.value);function getStyle(el,strCssRule){var oElm=document.getElementById(el);var strValue="";if(document.defaultView&&document.defaultView.getComputedStyle){strValue=document.defaultView.getComputedStyle(oElm,"").getPropertyValue(strCssRule);}
+else if(oElm.currentStyle){strCssRule=strCssRule.replace(/\-(\w)/g,function(strMatch,p1){return p1.toUpperCase();});strValue=oElm.currentStyle[strCssRule];}
+return strValue;}
+var inputs=document.getElementsByTagName("input");var len=inputs.length;for(var i=0;i<len;i++){if((inputs[i].getAttribute("id")!="gh-search-input")&&(inputs[i].getAttribute("type")=="text")&&inputs[i].getAttribute("placeholder")&&inputs[i].getAttribute("placeholder").length>0){var labelid="label"+i;var newDivTag=document.createElement("div");newDivTag.className="field-container";newDivTag.style.position="relative";var divTag=document.createElement("div");divTag.id=labelid;divTag.className="label-text";divTag.innerHTML=inputs[i].getAttribute("placeholder");divTag.style.display="block";divTag.style.color="#aaa";divTag.style.position="absolute";divTag.style.top="0px";divTag.style.left="0px";divTag.style['width']=getStyle(inputs[i].id,"width");divTag.style.paddingTop=getStyle(inputs[i].id,"padding-top");divTag.style.paddingBottom=getStyle(inputs[i].id,"padding-bottom");divTag.style.paddingLeft=getStyle(inputs[i].id,"padding-left");divTag.style.paddingRight=getStyle(inputs[i].id,"padding-right");divTag.style.textAlign=getStyle(inputs[i].id,"text-align");divTag.style.fontSize=getStyle(inputs[i].id,"font-size");var currentInputElement=inputs[i].cloneNode(false);currentInputElement.removeAttribute("placeholder");var parentNode=inputs[i].parentNode;parentNode.replaceChild(newDivTag,inputs[i]);newDivTag.appendChild(currentInputElement);newDivTag.appendChild(divTag);if(currentInputElement.value.length<1){divTag.style.display="block";}else{divTag.style.display="none";}
+divTag.onclick=function(){this.parentNode.getElementsByTagName("input")[0].focus();}
+currentInputElement.onblur=function(){if(this.value.length<1||this.value==this.getAttribute("placeholder")){this.parentNode.getElementsByTagName("div")[0].style.display="block";this.parentNode.getElementsByTagName("div")[0].style.color='#aaa';}
+else{this.parentNode.getElementsByTagName("div")[0].style.display="none";}}
+currentInputElement.onfocus=function(){if(this.value.length<1||this.value==this.getAttribute("placeholder")){this.parentNode.getElementsByTagName("div")[0].style.display="block";}
+else{this.parentNode.getElementsByTagName("div")[0].style.display="none";}}
+currentInputElement.onkeydown=function(){this.parentNode.getElementsByTagName("div")[0].style.display="none";}
+currentInputElement.onkeyup=function(){if(this.value.length>0){this.parentNode.getElementsByTagName("div")[0].style.display="none";}
+else{this.parentNode.getElementsByTagName("div")[0].style.display="block";}}}}}
+function defVal(){placeHolderFieldAnimation();if(document.getElementById('accountName').value==''){document.getElementById('accountName').focus();document.getElementById('accountName').select();}}
+function enterkeySubmit(inputelement,event){return true;}
+function clearField(){if(document.getElementById('errorSpan')!=null){document.getElementById('errorSpan').innerHTML="";}}
+function submitForm()
+{document.verifyIdForm.submit();}

