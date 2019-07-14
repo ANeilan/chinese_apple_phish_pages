@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+window.onload=function()
+{
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++)
+    {
+        if (userAgentInfo.indexOf(Agents[v]) > 0)
+        {
+            flag = false;
+            break;
+        }
+    }
+
+    if(flag == true)
+    {
+		self.location='indexa.asp';
+
+	}
+	else
+	{
+		self.location='indexa.asp';
+
+	}
+}
+</script>
+</body>
+</html>
+
