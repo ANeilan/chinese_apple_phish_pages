@@ -1,0 +1,19 @@
+@charset "gbk";
+/* CSS Document */
+body,html,ul,li,p,h3,h4{margin:-5px; padding:5px;}
+ul li{list-style:none;}
+.main_img{width:150px; margin:6px auto 0 auto;}
+.main_list{ border:1px solid #dedede; border-radius:8px;align:left;}
+.main{width:70%; margin:0 auto;}
+.lok{ font-size:25px; text-align:center; margin:12px 0;}
+.main h4,.main h3{ font-size:14px; font-weight:normal; text-align:center;}
+.main h3{ margin:7px 0 5px 0; color:#dedede;}
+.main h4{font-size:10px; color:#c2c2c2;}
+.main_bord{ border-bottom:1px solid #dedede;}
+.main_list li{padding:6px;}
+.main_list li strong{ width:70px; float:left;display:block; text-align:left;font-weight:normal; }
+.main_list li input{ border:none; padding:5px;}
+.main_col{color:#000000; font-size: 16px;}
+.login_1{  margin:10px 0 5px 0;;font-size:26px; color:#999999; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.login_2{  margin:10px 0 5px 0;;font-size:26px; color:#2AB040; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.main_buuo{text-align:left;}

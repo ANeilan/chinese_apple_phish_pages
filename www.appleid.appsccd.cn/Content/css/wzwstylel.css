@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, img, dl, dt, dd, table, th, td, blockquote, fieldset, div, strong, label, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+input, button {
+    margin: 0;
+    font-size: 12px;
+    vertical-align: text-bottom;
+    background-color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    color: #6d6e71;
+    font-family: "默认字体";
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+.cl {
+    height: 0;
+    font-size: 1px;
+    clear: both;
+    line-height: 0;
+}
+
+.none {
+    display: none;
+}
+
+.bbg {
+    background: #ccc;
+}
+
+*:focus {
+    outline: none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+.marg {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.mar_top10 {
+    margin-top: 10px;
+}
+
+.bg_fff {
+    background: #fff;
+}
+
+.bor {
+    border: 1px solid #d6bee0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+    .clearfix:before, .clearfix:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+.btn {
+    float: right;
+    margin-top: -26px;
+}
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=88);
+}
+
+.foot {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+    .foot em {
+        float: left;
+    }
+
+    .foot span {
+        float: right;
+        padding-right: 20px;
+        color: #dae1e4;
+    }
+
+        .foot span a {
+            padding: 0 12px;
+            font-size: 13px;
+            color: #F7E3D5;
+            font-family: "Helvetica Neue","Microsoft Yahei","SimHei",sans-serif;
+        }
