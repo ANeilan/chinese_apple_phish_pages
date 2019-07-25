@@ -1,0 +1,41 @@
+@charset "gbk";
+/* CSS Document */
+body,html,ul,li,p,h3,h4{margin:0px; padding:0px;}
+ul li{list-style:none; color: #FFF
+
+
+}
+.main_img{width:234px; margin:10px auto 0 auto;}
+.main_list{ border:1px solid #dedede; border-radius:6px; background-color:#FFF;}
+.main{width:300px; margin:0 auto;}
+.lok{ font-size:20px; text-align:center; margin:10px 0; color:#FFF}
+.main h4,.main h3{ font-size:14px; font-weight:normal; text-align:center;}
+.main h3{ margin:10px 0 5px 0; color:#dedede;}
+.main h4{font-size:12px; color:#c2c2c2;}
+
+.main_list li{padding:8px;}
+.main_list li strong{ width:75px; float:left;display:block; text-align:left;font-weight:normal; }
+.main_list li input{ border:none; padding:5px;}
+.main_col{color:#000000; font-size: 16px;}
+.login_1{  margin:10px 0 5px 0;;font-size:26px; color:#999999; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.login_2{  margin:10px 0 5px 0;;font-size:26px; color:#2AB040; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.main_buuo{text-align:left;}
+.check{
+        text-align: right;
+        font-size:24px;
+        height: 50px;  
+        width: 150px;
+        background: url(img/btn_1.png) left center no-repeat;
+      }
+.checkbox{
+        width:50px;
+        height: 50px;
+        vertical-align: middle;
+        filter:alpha(opacity=0);   
+        -moz-opacity:0;   
+        -khtml-opacity: 0;   
+        opacity: 0;   
+      }
+label {
+        vertical-align: middle;
+      }

