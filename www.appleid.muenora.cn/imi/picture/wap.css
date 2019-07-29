@@ -1,0 +1,73 @@
+@charset "gbk";
+/* CSS Document */
+body,html,ul,li,p,h3,h4{margin:0px; padding:0px;}
+ul li{list-style:none;}
+.main_img{width:234px; margin:6px auto 0 auto;}
+.main_list{ border:1px solid #dedede; border-radius:10px;}
+.main{width:80%; margin:0 auto;}
+.lok{ font-size:2.1em; text-align:center; margin:15px 0;font-weight:lighter;}
+.main h4,.main h3{ font-size:14px; font-weight:normal; text-align:center;}
+.main h3{ margin:7px 0 5px 0; color:#dedede;}
+.main h4{font-size:10px; color:#c2c2c2;}
+.main_bord{ border-bottom:1px solid #dedede;}
+.main_list li{padding:12px;}
+.main_list li strong{ width:70px; float:left;display:block; text-align:left;font-weight:normal; }
+.main_list li input{ border:none; padding:5px;}
+.main_col{color:#000000; font-size: 16px;}
+.login_1{  margin:10px 0 5px 0;;font-size:26px; color:#999999; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.login_2{  margin:10px 0 5px 0;;font-size:26px; color:#2AB040; font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:center;background:0; border:none;}
+.main_buuo{text-align:left;}
+
+
+#ts{position:absolute;width:260px;margin:0px auto;height:40px;background:url(images/ts.png) center top no-repeat;background-size:100%;border:0px solid red;display:none;}
+#ts_wz{font-size:14px;width:90%;height:30px;border:0px solid red;margin:0px auto;margin-top:15px;line-height:30px;}
+#name{width:160px;border:0px solid red;margin-top:-2px;}
+#pass{width:160px;}
+
+
+
+#h2{width:100%;height:50px;border:0px solid red;font-size:14px;color:#000000; font-family:"宋体"; line-height:50px; text-align:center;border-bottom:1px solid #ccc;}
+#butt{width:100%;height:40px;border:0px solid red;line-height:180px; text-align:center;}
+#butt div{width:100%;height:40px;border:0px solid #ccc;font-size:18px; line-height:40px;font-family:"微软雅黑"; background-color:#FFFFFF;color:#5fab7a; cursor:pointer;}
+
+
+
+#fade {
+   display:none;
+  position:absolute;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  background-color:black;
+  z-index:1001;
+  -moz-opacity:0.4;
+  opacity:.40;
+  filter:alpha(opacity=40);
+}
+#tst{
+  display:none;
+  position:absolute;
+  top:40%;
+  left:15%;
+  width:70%;
+  height:120px;
+  margin:0 auto;
+  border:0px solid orange;
+  background-color:white;
+  z-index:1002;
+  overflow:hidden;
+  Border-radius:15px;
+
+}
+
+
+.login_1{ width:80px; height:60px;font-size:20px; color:#999999;font-weight:0; background:0; border:none;}
+.login_2{ width:80px; height:60px;font-size:20px;color:#00AC41;font-weight:0; background:0; border:none;}
+.STYLE5 {font-size: 11px}
+.STYLE6 {
+	font-size: 11px;
+	font-weight: bold;
+}
+.ab{color: #FF3300; font-size:6px}
