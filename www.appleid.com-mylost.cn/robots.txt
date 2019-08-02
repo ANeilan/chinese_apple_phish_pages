@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: 360spider
+Disallow: /
+
+User-agent: Sosospider
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlespider
+Disallow: /
