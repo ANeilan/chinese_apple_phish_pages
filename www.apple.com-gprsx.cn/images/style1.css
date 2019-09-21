@@ -1,0 +1,159 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, img, dl, dt, dd, table, th, td, blockquote, fieldset, div, strong, label, em{margin:0; padding:0; border:0;	font-family:Microsoft YaHei; }
+ul, ol, li{list-style:none;}
+input, button{margin:0; font-size:12px; vertical-align:middle;font-family:Microsoft YaHei;}
+body{font:12px '微软雅黑' arial, Helvetica, sans-serif; margin:0; color:#6d6e71;}
+table{border-collapse:collapse; border-spacing:0;}
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+.cl{height:0; font-size:1px; clear:both; line-height:0;}
+.none{display:none}
+.bbg{background:#ccc}
+*:focus{outline:none}
+i,em{font-style:normal;}
+.marg{margin:0 auto; width:1000px}
+.mar_top10{ margin-top:10px}
+.bg_fff{background:#fff}
+.bor{border:1px solid #d6bee0}
+.fl{float:left}
+.fr{float:right}
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+
+.btn {
+    float: right;
+    margin-top: -26px;
+}
+.icloud{ overflow:hidden }
+.main{background:url("iCloud.jpg") no-repeat center; height:1800px; width:100%;}
+.top{ width:100%; height:20px; padding-bottom:200px; }
+.top em{ padding:10px; display:block; float:left}
+.top span{ float:right; padding:10px; height:45px; line-height:45px;}
+.login_main{width:960px;  margin:auto; padding-top:3%;}
+.login{ width:360px; height:360px; background:url(../images/login_bg.png) no-repeat; margin:0 auto; padding-top:25px}
+.del{ width:303px; height:164px; background:url(../images/login.jpg) no-repeat top; margin:0 auto; padding-top:166px;}
+.del ul li{ height:36px; padding-left:12px; margin-top:10px}
+.l_text{ width:250px; height:25px; border:none; line-height:25px; background:none;  font-size:20px; color:#646a6c; font-family:Arial,Microsoft YaHei; }
+.del ul li em{ float:right; padding-right:8px; cursor:pointer}
+.del ul li i{ display:block; width:200px; float:right; font-size:16px; margin-top:8px;  padding-left:26px; cursor:pointer}
+.del ul li i.xuaz{color:#fff;background:url(../images/kuang1.png) no-repeat center left;} 
+.del ul li i.xuaxcolor:#fff;{background:url(../images/kuang2.jpg) no-repeat center left;} 
+.white_content {display: none;position: absolute;top: 50%;left: 50%;width: 450PX;height: 200px;background: #fff;z-index: 1002; margin-left:-225px; margin-top:-150px; border-radius:12px; padding:10px}
+
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=88);
+}
+
+.foot{ position:absolute; bottom:10px; width:100%; padding:0px 10px}
+.foot em{ float:left}
+.foot span{ float:right; padding-right:10px; color:#e59d68;}
+.foot span a{ padding:0 22px; font-size:14px; }
+.foot font{ color:#f2e0d4;}
+.foot span a:link { color:#f2e0d4;}
+.foot span a:visited { color:#f2e0d4;}
+.foot span a:hover { color:#fff;}
+.foot span a:active { color:#fff;}
+
+
+
+.zhuce{ color:#FFF; width:323px; height:73px; text-align:center; background:url(../images/zhucebg.png) no-repeat; padding-top:10px;}
+
+
+
+.zhuce a:link { font-size:16px;; color:#fff; text-decoration:underline}
+.zhuce a:visited { font-size:16px; color:#fff; text-decoration:underline}
+.zhuce a:hover { font-size:16px; color:#fff; text-decoration:underline}
+.zhuce a:active { font-size:16px; color:#fff; text-decoration:underline}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
